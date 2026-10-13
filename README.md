@@ -9,3 +9,5 @@ See [local/README.md](local/README.md). On macOS, double-click `local/Run.comman
 ## Web version
 
 See [web/README.md](web/README.md). It is a static browser app with Hanzi input and a blank-page option. The result opens in another tab so it can be printed or saved as PDF from the browser.
+
+GitHub Actions publishes the contents of `web/` to [GitHub Pages](https://khangtranminh.github.io/hanzi-writing-sheet/) on every push to `main`.
