@@ -10,7 +10,6 @@
 * { box-sizing: border-box; }
 
 body {
-  min-width: 320px;
   min-height: 100vh;
   margin: 0;
   background:
@@ -30,6 +29,7 @@ h1 { margin: 12px 0 10px; font-family: Georgia, "Times New Roman", serif; font-s
 .page-header p { max-width: 550px; margin: 0; color: #6e6b62; font-size: 15px; line-height: 1.6; }
 
 .generator-card {
+  min-width: 0;
   padding: clamp(20px, 5vw, 36px);
   border: 1px solid #e5e1d8;
   border-radius: 16px;
@@ -37,28 +37,35 @@ h1 { margin: 12px 0 10px; font-family: Georgia, "Times New Roman", serif; font-s
   box-shadow: 0 18px 50px rgba(55, 49, 35, .07);
 }
 
-.mode-options { display: grid; gap: 10px; margin: 0 0 28px; padding: 0; border: 0; }
+.mode-options { display: grid; min-width: 0; gap: 10px; margin: 0 0 28px; padding: 0; border: 0; }
 .mode-options legend, .input-area > label { margin: 0 0 12px; color: #4e4c44; font-size: 13px; font-weight: 700; }
-.mode-option { display: flex; align-items: flex-start; gap: 12px; padding: 15px; border: 1px solid #e6e3dc; border-radius: 10px; cursor: pointer; transition: border-color .15s, background .15s; }
+.mode-option { display: flex; min-width: 0; align-items: flex-start; gap: 12px; padding: 15px; border: 1px solid #e6e3dc; border-radius: 10px; cursor: pointer; transition: border-color .15s, background .15s; }
 .mode-option:has(input:checked) { border-color: #839374; background: #f5f8f2; }
+.mode-option:focus-within { outline: 2px solid rgba(83, 107, 71, .35); outline-offset: 2px; }
 .mode-option input { width: 16px; height: 16px; margin: 2px 0 0; accent-color: #536b47; }
-.mode-copy { display: grid; gap: 3px; }
+.mode-copy { display: grid; min-width: 0; gap: 3px; }
 .mode-copy strong { color: #33322d; font-size: 14px; }
 .mode-copy small, .field-hint { color: #77746b; font-size: 12px; line-height: 1.5; }
 
-.input-area { display: grid; }
+.input-area { display: grid; min-width: 0; }
 .input-area[hidden] { display: none; }
-textarea { width: 100%; min-height: 164px; resize: vertical; padding: 14px 15px; border: 1px solid #dcd8ce; border-radius: 9px; outline: none; background: #fffefa; color: #292821; font: 15px/1.7 ui-monospace, SFMono-Regular, Menlo, monospace; }
+textarea { width: 100%; min-width: 0; max-width: 100%; min-height: 164px; resize: vertical; padding: 14px 15px; border: 1px solid #dcd8ce; border-radius: 9px; outline: none; background: #fffefa; color: #292821; font: 15px/1.7 ui-monospace, SFMono-Regular, Menlo, monospace; }
 textarea:focus { border-color: #80916e; box-shadow: 0 0 0 3px rgba(128, 145, 110, .16); }
 .field-hint { margin: 8px 0 0; }
-.form-message { min-height: 20px; margin: 14px 0 10px; color: #a13d30; font-size: 13px; }
+.form-message { min-height: 20px; margin: 14px 0 0; color: #a13d30; font-size: 13px; }
 .form-message:empty { min-height: 0; margin: 0; }
-.generate-button { display: flex; width: 100%; align-items: center; justify-content: space-between; padding: 15px 17px; border: 0; border-radius: 9px; background: #536b47; color: white; cursor: pointer; font: inherit; font-size: 14px; font-weight: 700; transition: background .15s, transform .15s; }
+.generate-button { display: flex; width: 100%; min-width: 0; min-height: 54px; align-items: center; justify-content: space-between; margin-top: 16px; padding: 16px 20px; border: 0; border-radius: 9px; background: #536b47; color: white; cursor: pointer; font: inherit; font-size: 15px; font-weight: 700; transition: background .15s, transform .15s; }
 .generate-button:hover { transform: translateY(-1px); background: #43583a; }
 .generate-button:disabled { cursor: wait; opacity: .7; transform: none; }
+.generate-button:focus-visible { outline: 3px solid #9aaf8d; outline-offset: 3px; }
 .page-footer { display: flex; justify-content: space-between; gap: 12px; margin-top: 18px; color: #77746b; font-size: 11px; }
 
 @media (max-width: 540px) {
-  .app-shell { width: min(100% - 28px, 760px); padding-top: 42px; }
-  .page-footer { flex-direction: column; }
+  .app-shell { width: calc(100% - 28px); padding: 36px 0 24px; }
+  .generator-card { padding: 18px; border-radius: 13px; }
+  .mode-options { gap: 8px; margin-bottom: 22px; }
+  .mode-option { gap: 10px; padding: 13px 12px; }
+  textarea { min-height: 150px; font-size: 16px; }
+  .generate-button { min-height: 56px; padding: 17px 18px; }
+  .page-footer { flex-direction: column; gap: 5px; line-height: 1.45; }
 }
