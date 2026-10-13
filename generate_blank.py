@@ -11,8 +11,8 @@ import sys
 import tempfile
 from pathlib import Path
 
-COLS = 10
-ROWS = 14
+COLS = 11
+ROWS = 16
 CELL_MM = 18
 MARGIN_MM = 3
 
@@ -38,7 +38,7 @@ def find_browser():
 
 def make_html():
     # A4, 3 mm margins. All squares remain exactly 18 x 18 mm.
-    # 14 rows, contiguous columns, with 3 mm vertical whitespace only.
+    # 16 rows and 10 columns, with no gaps between cells.
     css = f'''@page {{ size: A4 portrait; margin: 0; }}
 * {{ box-sizing: border-box; }}
 html, body {{ width: 210mm; height: 297mm; margin: 0; padding: 0; background: white; }}
@@ -47,14 +47,15 @@ html, body {{ width: 210mm; height: 297mm; margin: 0; padding: 0; background: wh
           grid-template-columns: repeat({COLS}, {CELL_MM}mm);
           grid-template-rows: repeat({ROWS}, {CELL_MM}mm);
           column-gap: 0;
-          row-gap: 3mm;
+          row-gap: 0;
           justify-content: center;
-          align-content: start;
+          align-content: center;
           overflow: hidden; break-inside: avoid; }}
 .cell {{ position: relative; width: {CELL_MM}mm; height: {CELL_MM}mm;
-         border-top: .18mm solid #444; border-bottom: .18mm solid #444;
-         border-right: .18mm solid #444; border-left: 0; overflow: hidden; }}
-/* Only the first cell in each row draws a left border; shared edges draw once. */
+         border-right: .18mm solid #444; border-bottom: .18mm solid #444;
+         border-top: 0; border-left: 0; overflow: hidden; }}
+/* Each shared edge is drawn once: top edge on row 1, left edge on column 1. */
+.cell:nth-child(-n + {COLS}) {{ border-top: .18mm solid #444; }}
 .cell:nth-child({COLS}n + 1) {{ border-left: .18mm solid #444; }}
 .guide {{ display: block; width: 100%; height: 100%; }}
 @media print {{ * {{ -webkit-print-color-adjust: exact; print-color-adjust: exact; }} }}

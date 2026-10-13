@@ -3,7 +3,7 @@
 ## Files
 - `generate.py`: reads `characters.txt` (one or more Hanzi per line), generates 4 character blocks per A4 page, writes timestamped HTML/PDF plus latest `practice.html` and `practice.pdf`.
 - `Run.command`: runs `generate.py` and opens the latest PDF.
-- `generate_blank.py`: generates a blank A4 practice sheet with 10 columns x 14 rows of 18 mm squares, no horizontal gaps, 3 mm vertical gaps.
+- `generate_blank.py`: generates a blank A4 practice sheet with 11 columns x 16 rows of 18 mm squares, centered on the page with no gaps between cells.
 - `Run-Blank.command`: runs `generate_blank.py` and opens the PDF.
 - `requirements.txt`: install using `python3 -m pip install -r requirements.txt`.
 - `characters.txt`: starts empty; add Hanzi here.
