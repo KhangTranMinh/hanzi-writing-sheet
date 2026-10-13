@@ -45,7 +45,7 @@ def svg_paths(paths, size_class, step=None, guide=False):
     out = [f'<svg class="{size_class}" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">']
     if guide:
         out.append('<path d="M512 0V1024 M0 512H1024 M0 0L1024 1024 M1024 0L0 1024" fill="none" stroke="#b8c0c8" stroke-width="7" stroke-dasharray="35 27"/>')
-    out.append('<g transform="translate(0,900) scale(1,-1)">')
+    out.append('<g transform="translate(512 512) scale(.9) translate(-512 -512) translate(0,900) scale(1,-1)">')
     for index, d in enumerate(paths):
         if step is None:
             color = '#111111'
@@ -137,14 +137,15 @@ CSS = r'''
 * { box-sizing: border-box; }
 html, body { padding:0; margin:0; background:#ededed; }
 body { font-family: Arial, sans-serif; }
-.sheet { width:210mm; height:289mm; padding:3mm; margin:10px auto;
-         background:white; display:flex; flex-direction:column; gap:0;
+.sheet { width:210mm; height:297mm; padding:3mm; margin:10px auto;
+         background:white; display:flex; flex-direction:column; gap:5mm;
+         justify-content:center;
          break-after:page; page-break-after:always; overflow:hidden; }
 .sheet:last-child { break-after:auto !important; page-break-after:auto !important; }
 /* Four equal-height panels per A4 sheet. The contents span the full width. */
 .character-panel { flex:0 0 69mm; height:69mm; max-height:69mm; width:100%; display:flex; flex-direction:column; overflow:hidden;
                    gap:2mm; border:0.22mm solid #555; padding:2mm; min-height:0; }
-.character-panel + .character-panel { border-top:0; }
+.character-panel.placeholder { visibility:hidden; }
 .top-row { width:100%; height:25.8mm; display:flex;
            justify-content:space-between; align-items:flex-start; }
 .character-column { width:23mm; flex:0 0 23mm; display:flex;
@@ -179,7 +180,12 @@ body { font-family: Arial, sans-serif; }
 def render(panels):
     pages = []
     for i in range(0, len(panels), 4):
-        pages.append('<main class="sheet">' + ''.join(panels[i:i+4]) + '</main>')
+        page_panels = panels[i:i+4]
+        page_panels.extend(
+            '<section class="character-panel placeholder" aria-hidden="true"></section>'
+            for _ in range(4 - len(page_panels))
+        )
+        pages.append('<main class="sheet">' + ''.join(page_panels) + '</main>')
     return ('<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1">'
             '<title>Hanzi writing practice</title><style>' + CSS + '</style></head><body>'

@@ -38,7 +38,7 @@ def find_browser():
 
 def make_html():
     # A4, 3 mm margins. All squares remain exactly 18 x 18 mm.
-    # 16 rows and 10 columns, with no gaps between cells.
+    # 16 rows and 11 columns, with no gaps between cells.
     css = f'''@page {{ size: A4 portrait; margin: 0; }}
 * {{ box-sizing: border-box; }}
 html, body {{ width: 210mm; height: 297mm; margin: 0; padding: 0; background: white; }}

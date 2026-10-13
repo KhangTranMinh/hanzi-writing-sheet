@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f4ef">
+  <title>Hanzi Writing Practice</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/pinyin-pro@3.18.2/dist/index.js"></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app-shell">
+    <header class="page-header">
+      <div class="eyebrow">HANZI WRITING PRACTICE</div>
+      <h1>Tạo trang luyện viết</h1>
+      <p>Nhập chữ Hán để tạo worksheet, hoặc chọn trang trống để tự luyện viết.</p>
+    </header>
+
+    <form id="generator-form" class="generator-card">
+      <fieldset class="mode-options">
+        <legend>Chọn loại trang</legend>
+        <label class="mode-option">
+          <input type="radio" name="mode" value="characters" checked>
+          <span class="mode-copy">
+            <strong>Luyện chữ Hán</strong>
+            <small>Nhập chữ theo dòng như trong characters.txt</small>
+          </span>
+        </label>
+        <label class="mode-option">
+          <input type="radio" name="mode" value="blank">
+          <span class="mode-copy">
+            <strong>Trang trống</strong>
+            <small>Tạo lưới ô vuông, không cần nhập chữ</small>
+          </span>
+        </label>
+      </fieldset>
+
+      <div id="characters-field" class="input-area">
+        <label for="characters">Danh sách chữ Hán</label>
+        <textarea id="characters" name="characters" rows="8" spellcheck="false"
+          placeholder="陈明康&#10;陈日东&#10;咖啡"></textarea>
+        <p class="field-hint">Có thể nhập nhiều chữ trên mỗi dòng. Ký tự trùng lặp sẽ chỉ xuất hiện một lần.</p>
+      </div>
+
+      <p id="form-message" class="form-message" role="status" aria-live="polite"></p>
+      <button id="generate-button" class="generate-button" type="submit">
+        <span>Tạo trang</span>
+        <span aria-hidden="true">↗</span>
+      </button>
+    </form>
+
+    <footer class="page-footer">
+      <span>Kết quả mở ở tab mới.</span>
+      <span>Dùng nút in trong tab kết quả để lưu thành PDF.</span>
+    </footer>
+  </main>
+</body>
+</html>

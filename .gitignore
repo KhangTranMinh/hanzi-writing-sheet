@@ -6,6 +6,10 @@ __pycache__/
 
 # Generated worksheets
 output/
+local/output/
+
+# Local Python environment
+local/.venv/
 
 # Local secrets
 .env
