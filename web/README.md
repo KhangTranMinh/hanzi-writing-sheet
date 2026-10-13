@@ -2,6 +2,8 @@
 
 This static browser app has its own `data/` stroke cache. It does not read files from `local/`.
 
+Hosted version: <https://khangtranminh.github.io/hanzi-writing-sheet/>. GitHub Actions deploys `web/` whenever a commit is pushed to `main`.
+
 From the project root, serve only this folder:
 
 ```sh
