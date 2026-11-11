@@ -25,7 +25,20 @@ Edit `practice-data.json` to change the cards. It is a JSON array of objects wit
 ]
 ```
 
-Missing or blank pinyin is generated locally with `pinyin-pro` for the whole word. Supply pinyin explicitly when a particular reading is needed. After the cards are prepared, they are shuffled. Select a card to reveal its pinyin; the transition to the next card starts after 1.5 seconds. At the end, select **Luyện lại** to start a new shuffled round. Serve the folder over HTTP as shown above so the browser can load the JSON file.
+Missing or blank pinyin is generated locally with `pinyin-pro` for the whole word. Supply pinyin explicitly when a particular reading is needed. After the cards are prepared, they are shuffled. Select a card to reveal its pinyin, then select it again to move on. At the end, select **Luyện lại** to start a new shuffled round. Serve the folder over HTTP as shown above so the browser can load the JSON file.
+
+### Changing how cards advance
+
+Open `web/practice.js` and change the `ADVANCE_MODE` constant near the top:
+
+```js
+const ADVANCE_MODE = "manual";
+```
+
+- `"manual"`: tap once to reveal pinyin, then tap again to advance.
+- `"automatic"`: advance automatically after 1.5 seconds; tapping the revealed card advances immediately.
+
+To change the automatic delay, edit `AUTO_ADVANCE_DELAY` in the same file; its value is in milliseconds (`1500` means 1.5 seconds). Reload the page after editing.
 
 To fill missing pinyin in the JSON on macOS, run from the project root:
 

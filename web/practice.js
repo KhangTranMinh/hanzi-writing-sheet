@@ -1,6 +1,9 @@
 (() => {
   "use strict";
 
+  // Use "manual" to advance on tap, or "automatic" to advance after 1.5 seconds.
+  const ADVANCE_MODE = "manual";
+  const AUTO_ADVANCE_DELAY = 1500;
   const status = document.querySelector("#practice-status");
   const card = document.querySelector("#practice-card");
   const hanzi = document.querySelector("#card-hanzi");
@@ -80,16 +83,25 @@
     }
   }
 
+  function advance() {
+    clearTimeout(timer);
+    card.classList.remove("card-enter");
+    card.classList.add("card-exit");
+  }
+
   card.addEventListener("click", () => {
-    if (flipped) return;
+    if (card.classList.contains("card-exit")) return;
+    if (flipped) {
+      advance();
+      return;
+    }
     flipped = true;
     card.classList.add("is-flipped");
-    card.setAttribute("aria-label", `Pinyin: ${items[index].pinyin}`);
-    hint.textContent = "Đang chuyển sang thẻ tiếp theo…";
-    timer = setTimeout(() => {
-      card.classList.remove("card-enter");
-      card.classList.add("card-exit");
-    }, 1500);
+    card.setAttribute("aria-label", `Pinyin: ${items[index].pinyin}. Chạm để chuyển thẻ tiếp theo`);
+    hint.textContent = ADVANCE_MODE === "automatic"
+      ? "Chạm để chuyển ngay, hoặc chờ thẻ tiếp theo…"
+      : "Chạm vào thẻ để tiếp tục";
+    if (ADVANCE_MODE === "automatic") timer = setTimeout(advance, AUTO_ADVANCE_DELAY);
   });
   card.addEventListener("animationend", (event) => {
     if (event.target !== card) return;
