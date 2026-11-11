@@ -63,13 +63,16 @@ Dictionary data is from [CC-CEDICT](https://cc-cedict.org/), published by MDBG a
 
 ## Lessons
 
-Add lesson files in `lessons/data/`, named `0001-0001.json`, `0001-0002.json`, and so on. The first four digits identify the part and the last four identify the lesson. Each file is a JSON array; every object becomes a card and must have non-empty `hanzi`, `pinyin`, and `meaning` strings:
+Add lesson files in `lessons/data/`, named `0001-0001.json`, `0001-0002.json`, and so on. The first four digits identify the part and the last four identify the lesson. Each file is a JSON object with a non-empty `title` and an `items` array. Every item becomes a card and must have non-empty `hanzi`, `pinyin`, and `meaning` strings:
 
 ```json
-[
-  { "hanzi": "你好", "pinyin": "nǐ hǎo", "meaning": "xin chào" },
-  { "hanzi": "谢谢", "pinyin": "xiè xie", "meaning": "cảm ơn" }
-]
+{
+  "title": "Chào hỏi",
+  "items": [
+    { "hanzi": "你好", "pinyin": "nǐ hǎo", "meaning": "xin chào" },
+    { "hanzi": "谢谢", "pinyin": "xiè xie", "meaning": "cảm ơn" }
+  ]
+}
 ```
 
 After adding, renaming, or removing lesson files, run this command from the project root and include the updated `lessons/data/index.json` when publishing:

@@ -1,5 +1,25 @@
-[
-  { "hanzi": "你好", "pinyin": "nǐ hǎo", "meaning": "xin chào" },
-  { "hanzi": "谢谢", "pinyin": "xiè xie", "meaning": "cảm ơn" },
-  { "hanzi": "再见", "pinyin": "zài jiàn", "meaning": "tạm biệt" }
-]
+{
+  "title": "Câu thông dụng",
+  "items": [
+    {
+      "hanzi": "我们是好兄弟",
+      "pinyin": "wǒ men shì hǎo xiōng dì",
+      "meaning": "Chúng ta là anh em tốt"
+    },
+    {
+      "hanzi": "老婆，回家吧！",
+      "pinyin": "lǎo pó ，huí jiā ba ！",
+      "meaning": "Vợ ơi, về nhà thôi!"
+    },
+    {
+      "hanzi": "见面吗？",
+      "pinyin": "jiàn miàn ma ？",
+      "meaning": "Gặp lại nhau sao?"
+    },
+    {
+      "hanzi": "我的公寓只有三个房间",
+      "pinyin": "wǒ de gōng yù zhǐ yǒu sān gè fáng jiān",
+      "meaning": "Nhà trọ của tôi chỉ có ba phòng"
+    }
+  ]
+}

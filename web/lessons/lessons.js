@@ -45,7 +45,11 @@ async function show() {
       description.textContent = 'Chữ Hán, pinyin và nghĩa của bài học.';
       back.href = `?part=${part}`;
       back.textContent = '← Danh sách bài học';
-      const cards = await loadJSON(`data/${part}-${lesson}.json`);
+      const data = await loadJSON(`data/${part}-${lesson}.json`);
+      if (!data || typeof data.title !== 'string' || !data.title.trim()) throw new Error('Dữ liệu bài học không hợp lệ.');
+      title.textContent = `Bài ${Number(lesson)} · ${data.title}`;
+      description.textContent = `Phần ${Number(part)} · Bài ${Number(lesson)}`;
+      const cards = data.items;
       if (!Array.isArray(cards) || cards.some(card => !card || typeof card.hanzi !== 'string' || !card.hanzi.trim() || typeof card.pinyin !== 'string' || !card.pinyin.trim() || typeof card.meaning !== 'string' || !card.meaning.trim())) {
         throw new Error('Dữ liệu bài học không hợp lệ.');
       }
@@ -68,26 +72,47 @@ async function show() {
       const catalog = await loadJSON('data/index.json');
       if (!Array.isArray(catalog) || catalog.some(id => typeof id !== 'string' || !/^\d{4}-\d{4}$/.test(id))) throw new Error('Danh sách bài học không hợp lệ.');
       const ids = [...new Set(catalog)].sort();
+      const lessonTitles = new Map(await Promise.all(ids.map(async id => {
+        try {
+          const data = await loadJSON(`data/${id}.json`);
+          return [id, typeof data?.title === 'string' && data.title.trim() ? data.title : 'Chưa có tên'];
+        } catch {
+          return [id, 'Chưa có tên'];
+        }
+      })));
       const list = document.createElement('nav');
       list.className = 'home-options';
-      if (part) {
-        title.textContent = `Phần ${Number(part)}`;
-        description.textContent = 'Chọn bài học để xem các thẻ chữ Hán.';
-        back.href = './';
-        back.textContent = '← Danh sách phần';
-        const lessons = ids.filter(id => id.startsWith(`${part}-`));
-        if (!lessons.length) { status.textContent = 'Phần này chưa có bài học.'; return; }
-        lessons.forEach(id => list.append(link(`Bài ${Number(id.slice(5))}`, `?part=${part}&lesson=${id.slice(5)}`)));
-        list.setAttribute('aria-label', 'Chọn bài học');
-      } else {
-        const parts = [...new Set(ids.map(id => id.slice(0, 4)))];
-        if (!parts.length) { status.textContent = 'Chưa có bài học nào.'; return; }
-        parts.forEach(id => {
-          const count = ids.filter(item => item.startsWith(`${id}-`)).length;
-          list.append(link(`Phần ${Number(id)}`, `?part=${id}`, `${count} bài học`));
+      const parts = [...new Set(ids.map(id => id.slice(0, 4)))];
+      if (!parts.length) { status.textContent = 'Chưa có bài học nào.'; return; }
+      if (part && !parts.includes(part)) { status.textContent = 'Phần này chưa có bài học.'; return; }
+      list.setAttribute('aria-label', 'Chọn phần và bài học');
+      parts.forEach(id => {
+        const lessons = ids.filter(item => item.startsWith(`${id}-`));
+        const section = document.createElement('details');
+        section.className = 'lesson-section';
+        section.open = id === part;
+        const summary = document.createElement('summary');
+        summary.className = 'lesson-section-title';
+        const label = document.createElement('span');
+        const strong = document.createElement('strong');
+        strong.textContent = `Phần ${Number(id)}`;
+        const count = document.createElement('small');
+        count.textContent = `${lessons.length} bài học`;
+        label.append(strong, count);
+        summary.append(label);
+        const lessonList = document.createElement('div');
+        lessonList.className = 'lesson-section-list';
+        lessons.forEach(item => lessonList.append(link(`Bài ${Number(item.slice(5))} · ${lessonTitles.get(item)}`, `?part=${id}&lesson=${item.slice(5)}`)));
+        section.append(summary, lessonList);
+        section.addEventListener('toggle', () => {
+          if (section.open) {
+            list.querySelectorAll('details').forEach(other => {
+              if (other !== section) other.open = false;
+            });
+          }
         });
-        list.setAttribute('aria-label', 'Chọn phần');
-      }
+        list.append(section);
+      });
       content.append(list);
     }
     status.textContent = '';

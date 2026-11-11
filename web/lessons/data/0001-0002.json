@@ -1,5 +1,20 @@
-[
-  { "hanzi": "你好", "pinyin": "nǐ hǎo", "meaning": "xin chào" },
-  { "hanzi": "谢谢", "pinyin": "xiè xie", "meaning": "cảm ơn" },
-  { "hanzi": "再见", "pinyin": "zài jiàn", "meaning": "tạm biệt" }
-]
+{
+  "title": "Câu chào và lời cảm ơn",
+  "items": [
+    {
+      "hanzi": "你好",
+      "pinyin": "nǐ hǎo",
+      "meaning": "xin chào"
+    },
+    {
+      "hanzi": "谢谢",
+      "pinyin": "xiè xie",
+      "meaning": "cảm ơn"
+    },
+    {
+      "hanzi": "再见",
+      "pinyin": "zài jiàn",
+      "meaning": "tạm biệt"
+    }
+  ]
+}
