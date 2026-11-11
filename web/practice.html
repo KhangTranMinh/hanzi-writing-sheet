@@ -19,13 +19,13 @@
     </header>
     <section class="practice-area" aria-label="Thẻ luyện tập">
       <p id="practice-status" class="practice-status" role="status" aria-live="polite">Đang chuẩn bị thẻ…</p>
-      <button id="practice-card" class="practice-card" type="button" hidden aria-label="Lật thẻ để xem pinyin">
+      <button id="practice-card" class="practice-card" type="button" hidden aria-label="Chạm để xem pinyin">
         <span class="card-inner">
-          <span class="card-face card-front" id="card-hanzi"></span>
-          <span class="card-face card-back" id="card-pinyin"></span>
+          <span class="card-hanzi" id="card-hanzi"></span>
+          <span class="card-pinyin" id="card-pinyin" aria-hidden="true"></span>
         </span>
       </button>
-      <p id="practice-hint" class="practice-hint" hidden>Chạm vào thẻ để lật</p>
+      <p id="practice-hint" class="practice-hint" hidden>Chạm vào thẻ để xem pinyin</p>
       <button id="practice-retry" class="generate-button" type="button" hidden>Thử lại</button>
     </section>
   </main>

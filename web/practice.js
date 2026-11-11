@@ -12,7 +12,7 @@
   const retry = document.querySelector("#practice-retry");
   let items = [];
   let index = 0;
-  let flipped = false;
+  let revealed = false;
   let timer;
 
   function shuffle(list) {
@@ -25,10 +25,11 @@
   }
 
   function showCard() {
-    flipped = false;
-    card.classList.remove("is-flipped");
+    revealed = false;
+    card.classList.remove("is-revealed");
+    pinyin.setAttribute("aria-hidden", "true");
     card.disabled = false;
-    card.setAttribute("aria-label", "Lật thẻ để xem pinyin");
+    card.setAttribute("aria-label", "Chạm để xem pinyin");
     if (index >= items.length) {
       card.hidden = true;
       hint.hidden = true;
@@ -91,12 +92,13 @@
 
   card.addEventListener("click", () => {
     if (card.classList.contains("card-exit")) return;
-    if (flipped) {
+    if (revealed) {
       advance();
       return;
     }
-    flipped = true;
-    card.classList.add("is-flipped");
+    revealed = true;
+    card.classList.add("is-revealed");
+    pinyin.setAttribute("aria-hidden", "false");
     card.setAttribute("aria-label", `Pinyin: ${items[index].pinyin}. Chạm để chuyển thẻ tiếp theo`);
     hint.textContent = ADVANCE_MODE === "automatic"
       ? "Chạm để chuyển ngay, hoặc chờ thẻ tiếp theo…"
@@ -108,7 +110,7 @@
     if (event.animationName === "card-exit") {
       card.classList.remove("card-exit");
       index++;
-      hint.textContent = "Chạm vào thẻ để lật";
+      hint.textContent = "Chạm vào thẻ để xem pinyin";
       showCard();
       if (!card.hidden) card.classList.add("card-enter");
     } else if (event.animationName === "card-enter") {
