@@ -2,6 +2,12 @@
 
 The project has three separate versions. `local/` contains the Python app and its inputs, `web/` contains the browser app, and `react-native/` contains the Android/iOS app. Each version is maintained independently.
 
+## GitHub authentication
+
+For a new checkout, create a root `.env` file containing `GITHUB_TOKEN=your_token`. This file is ignored by Git. The token must have access to this repository and the permissions needed for the action (for example, repository contents write for push and pull requests write for creating PRs). Install Python 3, Git, and, for GitHub commands, [GitHub CLI](https://cli.github.com/).
+
+No per-repository credential helper setup is needed. Project instructions in `AGENTS.md` describe how to authenticate Git and GitHub CLI commands. Do not put the token in commands, URLs, or tracked files.
+
 ## Local version
 
 See [local/README.md](local/README.md). On macOS, double-click `local/Run.command` or `local/Run-Blank.command`.

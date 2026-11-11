@@ -44,11 +44,19 @@ To change the automatic delay, edit `AUTO_ADVANCE_DELAY` in the same file; its v
 
 When updating the version, also change the `v` query value on the practice link and stylesheet in `index.html`, and the stylesheet and script references in `practice/index.html`, to match. This gives browsers new URLs for updated files. The practice data is revalidated when it is loaded.
 
-Run the script from the project root on macOS. It uses the bundled `pinyin-pro` and JavaScriptCore; it does not need network access or Node.js. Each command updates its input file in place:
+### Updating practice data
 
-- **Default:** fill missing pinyin in `web/practice/data.json`, preserving existing values.
-  `python3 scripts/update-web-practice-pinyin.py`
-- **`--file`:** update a different JSON file, preserving existing values.
-  `python3 scripts/update-web-practice-pinyin.py --file private/practice.json`
-- **`--all`:** regenerate every pinyin value in the default file.
-  `python3 scripts/update-web-practice-pinyin.py --all`
+Run the local script from the project root on macOS to fill missing pinyin and English meanings. It preserves existing values and updates its input file in place:
+
+- **Default:** update `web/practice/data.json`.
+  `python3 scripts/web-practice-data/run.py`
+- **`--file`:** update a different JSON file.
+  `python3 scripts/web-practice-data/run.py --file private/practice.json`
+- **`--all`:** regenerate pinyin and English meanings, including existing values. If a word is not found in the dictionary, its existing meaning is kept and the word is reported.
+  `python3 scripts/web-practice-data/run.py --all`
+- **`--refresh`:** download a fresh CC-CEDICT dictionary before updating meanings.
+  `python3 scripts/web-practice-data/run.py --refresh`
+
+Pinyin uses the bundled `pinyin-pro` and macOS JavaScriptCore. English meanings use exact dictionary matches; unmatched entries are listed and left unchanged. Review suggestions because dictionary entries can have multiple meanings and do not account for context. The repository includes CC-CEDICT in `scripts/web-practice-data/`, so the script can run offline. Use `--refresh` to download an updated copy.
+
+Dictionary data is from [CC-CEDICT](https://cc-cedict.org/), published by MDBG and its contributors, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The script downloads a copy from [cc-cedict-stardict](https://github.com/liamsaliba/cc-cedict-stardict). Meanings added from the dictionary retain that attribution and license.
