@@ -1,0 +1,75 @@
+{
+  "title": "Đi lại, phương tiện",
+  "items": [
+    {
+      "hanzi": "手机",
+      "pinyin": "shǒu jī",
+      "meaning": "Điện thoại di động"
+    },
+    {
+      "hanzi": "钱包",
+      "pinyin": "qián bāo",
+      "meaning": "Ví"
+    },
+    {
+      "hanzi": "在",
+      "pinyin": "zài",
+      "meaning": "Ở"
+    },
+    {
+      "hanzi": "这里",
+      "pinyin": "zhè lǐ",
+      "meaning": "Ở đây"
+    },
+    {
+      "hanzi": "哪里",
+      "pinyin": "nǎ lǐ",
+      "meaning": "Ở đâu"
+    },
+    {
+      "hanzi": "洗手间",
+      "pinyin": "xǐ shǒu jiān",
+      "meaning": "Nhà vệ sinh"
+    },
+    {
+      "hanzi": "火车站",
+      "pinyin": "huǒ chē zhàn",
+      "meaning": "Ga tàu hỏa"
+    },
+    {
+      "hanzi": "火车",
+      "pinyin": "huǒ chē",
+      "meaning": "Tàu hỏa"
+    },
+    {
+      "hanzi": "车票",
+      "pinyin": "chē piào",
+      "meaning": "Vé tàu"
+    },
+    {
+      "hanzi": "第",
+      "pinyin": "dì",
+      "meaning": "Thứ (chỉ thứ tự)"
+    },
+    {
+      "hanzi": "第一",
+      "pinyin": "dì yī",
+      "meaning": "Thứ nhất"
+    },
+    {
+      "hanzi": "第二",
+      "pinyin": "dì èr",
+      "meaning": "Thứ hai"
+    },
+    {
+      "hanzi": "行李",
+      "pinyin": "xíng lǐ",
+      "meaning": "Hành lý"
+    },
+    {
+      "hanzi": "站台",
+      "pinyin": "zhàn tái",
+      "meaning": "Sân ga"
+    }
+  ]
+}

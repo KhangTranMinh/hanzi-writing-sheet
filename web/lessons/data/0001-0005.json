@@ -1,0 +1,50 @@
+{
+  "title": "Nghề nghiệp",
+  "items": [
+    {
+      "hanzi": "老师",
+      "pinyin": "lǎo shī",
+      "meaning": "Giáo viên"
+    },
+    {
+      "hanzi": "学生",
+      "pinyin": "xué sheng",
+      "meaning": "Học sinh"
+    },
+    {
+      "hanzi": "律师",
+      "pinyin": "lǜ shī",
+      "meaning": "Luật sư"
+    },
+    {
+      "hanzi": "医生",
+      "pinyin": "yī shēng",
+      "meaning": "Bác sĩ"
+    },
+    {
+      "hanzi": "中文",
+      "pinyin": "zhōng wén",
+      "meaning": "Tiếng Trung"
+    },
+    {
+      "hanzi": "英文",
+      "pinyin": "yīng wén",
+      "meaning": "Tiếng Anh"
+    },
+    {
+      "hanzi": "对",
+      "pinyin": "duì",
+      "meaning": "Đúng"
+    },
+    {
+      "hanzi": "对不对",
+      "pinyin": "duì bù duì",
+      "meaning": "Đúng hay không?"
+    },
+    {
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "meaning": "Nói"
+    }
+  ]
+}

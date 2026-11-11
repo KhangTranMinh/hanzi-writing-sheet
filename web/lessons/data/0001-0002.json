@@ -1,20 +1,25 @@
 {
-  "title": "Câu chào và lời cảm ơn",
+  "title": "Họ và tên",
   "items": [
     {
-      "hanzi": "你好",
-      "pinyin": "nǐ hǎo",
-      "meaning": "xin chào"
+      "hanzi": "陈明康",
+      "pinyin": "chen míng kāng",
+      "meaning": "Trần Minh Khang"
     },
     {
-      "hanzi": "谢谢",
-      "pinyin": "xiè xie",
-      "meaning": "cảm ơn"
+      "hanzi": "黄越芳",
+      "pinyin": "huáng yuè fāng",
+      "meaning": "Hoàng Việt Phương"
     },
     {
-      "hanzi": "再见",
-      "pinyin": "zài jiàn",
-      "meaning": "tạm biệt"
+      "hanzi": "陈日东",
+      "pinyin": "chen rì dōng",
+      "meaning": "Trần Nhật Đông"
+    },
+    {
+      "hanzi": "陈日姜",
+      "pinyin": "chen rì jiāng",
+      "meaning": "Trần Nhật Khương"
     }
   ]
 }

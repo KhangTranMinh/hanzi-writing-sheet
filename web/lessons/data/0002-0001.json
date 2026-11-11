@@ -1,25 +1,105 @@
 {
-  "title": "Câu thông dụng",
+  "title": "Dùng tính từ để miêu tả",
   "items": [
     {
-      "hanzi": "我们是好兄弟",
-      "pinyin": "wǒ men shì hǎo xiōng dì",
-      "meaning": "Chúng ta là anh em tốt"
+      "hanzi": "房子",
+      "pinyin": "fáng zi",
+      "meaning": "Nhà"
     },
     {
-      "hanzi": "老婆，回家吧！",
-      "pinyin": "lǎo pó ，huí jiā ba ！",
-      "meaning": "Vợ ơi, về nhà thôi!"
+      "hanzi": "公寓",
+      "pinyin": "gōng yù",
+      "meaning": "Chung cư"
     },
     {
-      "hanzi": "见面吗？",
-      "pinyin": "jiàn miàn ma ？",
-      "meaning": "Gặp lại nhau sao?"
+      "hanzi": "很",
+      "pinyin": "hěn",
+      "meaning": "Rất"
+    },
+    {
+      "hanzi": "房间",
+      "pinyin": "fáng jiān",
+      "meaning": "Phòng"
+    },
+    {
+      "hanzi": "小",
+      "pinyin": "xiǎo",
+      "meaning": "Nhỏ"
+    },
+    {
+      "hanzi": "大",
+      "pinyin": "dà",
+      "meaning": "Lớn"
+    },
+    {
+      "hanzi": "只",
+      "pinyin": "zhǐ",
+      "meaning": "Chỉ"
     },
     {
       "hanzi": "我的公寓只有三个房间",
       "pinyin": "wǒ de gōng yù zhǐ yǒu sān gè fáng jiān",
-      "meaning": "Nhà trọ của tôi chỉ có ba phòng"
+      "meaning": "Chung cư của tôi chỉ có ba phòng"
+    },
+    {
+      "hanzi": "卧室",
+      "pinyin": "wò shì",
+      "meaning": "Phòng ngủ"
+    },
+    {
+      "hanzi": "厨房",
+      "pinyin": "chú fáng",
+      "meaning": "Nhà bếp"
+    },
+    {
+      "hanzi": "客厅",
+      "pinyin": "kè tīng",
+      "meaning": "Phòng khách"
+    },
+    {
+      "hanzi": "沙发",
+      "pinyin": "shā fā",
+      "meaning": "Sofa"
+    },
+    {
+      "hanzi": "舒服",
+      "pinyin": "shū fu",
+      "meaning": "Thoải mái"
+    },
+    {
+      "hanzi": "床",
+      "pinyin": "chuáng",
+      "meaning": "Giường"
+    },
+    {
+      "hanzi": "电视",
+      "pinyin": "diàn shì",
+      "meaning": "Tivi"
+    },
+    {
+      "hanzi": "漂亮",
+      "pinyin": "piào liang",
+      "meaning": "Đẹp"
+    },
+    {
+      "hanzi": "桌子",
+      "pinyin": "zhuō zi",
+      "meaning": "Bàn"
+    },
+    {
+      "hanzi": "冰箱",
+      "pinyin": "bīng xiāng",
+      "meaning": "Tủ lạnh"
+    },
+    {
+      "hanzi": "乱",
+      "pinyin": "luàn",
+      "meaning": "Lộn xộn"
+    },
+    {
+      "hanzi": "旧",
+      "pinyin": "jiù",
+      "meaning": "Cũ"
     }
   ]
 }

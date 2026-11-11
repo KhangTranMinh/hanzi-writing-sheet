@@ -1,0 +1,60 @@
+{
+  "title": "Quốc gia",
+  "items": [
+    {
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "meaning": "Tôi"
+    },
+    {
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "meaning": "Anh/em"
+    },
+    {
+      "hanzi": "是",
+      "pinyin": "shì",
+      "meaning": "Là"
+    },
+    {
+      "hanzi": "中国",
+      "pinyin": "zhōng guó",
+      "meaning": "Trung Quốc"
+    },
+    {
+      "hanzi": "韩国",
+      "pinyin": "hán guó",
+      "meaning": "Hàn Quốc"
+    },
+    {
+      "hanzi": "日本",
+      "pinyin": "rì běn",
+      "meaning": "Nhật Bản"
+    },
+    {
+      "hanzi": "美国",
+      "pinyin": "měi guó",
+      "meaning": "Mỹ Quốc"
+    },
+    {
+      "hanzi": "越南",
+      "pinyin": "yuè nán",
+      "meaning": "Việt Nam"
+    },
+    {
+      "hanzi": "人",
+      "pinyin": "rén",
+      "meaning": "Người"
+    },
+    {
+      "hanzi": "你呢",
+      "pinyin": "nǐ ne",
+      "meaning": "Còn bạn?"
+    },
+    {
+      "hanzi": "嗨",
+      "pinyin": "hāi",
+      "meaning": "Chào"
+    }
+  ]
+}

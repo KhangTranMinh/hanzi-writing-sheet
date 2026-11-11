@@ -1,0 +1,85 @@
+{
+  "title": "Thể thao, sở thích",
+  "items": [
+    {
+      "hanzi": "打",
+      "pinyin": "dǎ",
+      "meaning": "Đánh"
+    },
+    {
+      "hanzi": "篮球",
+      "pinyin": "lán qiú",
+      "meaning": "Bóng rổ"
+    },
+    {
+      "hanzi": "打篮球",
+      "pinyin": "dǎ lán qiú",
+      "meaning": "Chơi bóng rổ"
+    },
+    {
+      "hanzi": "排球",
+      "pinyin": "pái qiú",
+      "meaning": "Bóng chuyền"
+    },
+    {
+      "hanzi": "打排球",
+      "pinyin": "dǎ pái qiú",
+      "meaning": "Chơi bóng chuyền"
+    },
+    {
+      "hanzi": "网球",
+      "pinyin": "wǎng qiú",
+      "meaning": "Quần vợt"
+    },
+    {
+      "hanzi": "打网球",
+      "pinyin": "dǎ wǎng qiú",
+      "meaning": "Chơi quần vợt"
+    },
+    {
+      "hanzi": "运动",
+      "pinyin": "yùn dòng",
+      "meaning": "Thể thao"
+    },
+    {
+      "hanzi": "跑步",
+      "pinyin": "pǎo bù",
+      "meaning": "Chạy bộ"
+    },
+    {
+      "hanzi": "非常",
+      "pinyin": "fēi cháng",
+      "meaning": "Rất"
+    },
+    {
+      "hanzi": "我非常喜欢跑步",
+      "pinyin": "wǒ fēi cháng xǐ huān pǎo bù",
+      "meaning": "Tôi rất thích chạy bộ"
+    },
+    {
+      "hanzi": "游泳",
+      "pinyin": "yóu yǒng",
+      "meaning": "Bơi lội"
+    },
+    {
+      "hanzi": "还是",
+      "pinyin": "hái shì",
+      "meaning": "Vẫn"
+    },
+    {
+      "hanzi": "健身房",
+      "pinyin": "jiàn shēn fáng",
+      "meaning": "Phòng tập gym"
+    },
+    {
+      "hanzi": "公园",
+      "pinyin": "gōng yuán",
+      "meaning": "Công viên"
+    },
+    {
+      "hanzi": "比较",
+      "pinyin": "bǐ jiào",
+      "meaning": "So sánh"
+    } 
+  ]
+}
