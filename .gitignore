@@ -16,3 +16,6 @@ local/.venv/
 
 # macOS metadata
 .DS_Store
+
+# Private local files
+/private/
