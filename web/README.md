@@ -26,3 +26,11 @@ Edit `practice-data.json` to change the cards. It is a JSON array of objects wit
 ```
 
 Missing or blank pinyin is generated locally with `pinyin-pro` for the whole word. Supply pinyin explicitly when a particular reading is needed. After the cards are prepared, they are shuffled. Select a card to reveal its pinyin; the transition to the next card starts after 1.5 seconds. At the end, select **Luyện lại** to start a new shuffled round. Serve the folder over HTTP as shown above so the browser can load the JSON file.
+
+To fill missing pinyin in the JSON on macOS, run from the project root:
+
+```sh
+python3 web/scripts/update-pinyin.py
+```
+
+The script uses the bundled `pinyin-pro` and macOS JavaScriptCore; it does not need network access or Node.js. Existing pinyin and other fields are preserved. Use `--all` to regenerate every reading, including manually entered pinyin. Use `--file path/to/file.json` to update a different JSON file.
