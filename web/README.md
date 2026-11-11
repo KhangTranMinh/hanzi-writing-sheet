@@ -60,3 +60,22 @@ Run the local script from the project root on macOS to fill missing pinyin and E
 Pinyin uses the bundled `pinyin-pro` and macOS JavaScriptCore. English meanings use exact dictionary matches; unmatched entries are listed and left unchanged. Review suggestions because dictionary entries can have multiple meanings and do not account for context. The repository includes CC-CEDICT in `scripts/web-practice-data/`, so the script can run offline. Use `--refresh` to download an updated copy.
 
 Dictionary data is from [CC-CEDICT](https://cc-cedict.org/), published by MDBG and its contributors, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The script downloads a copy from [cc-cedict-stardict](https://github.com/liamsaliba/cc-cedict-stardict). Meanings added from the dictionary retain that attribution and license.
+
+## Lessons
+
+Add lesson files in `lessons/data/`, named `0001-0001.json`, `0001-0002.json`, and so on. The first four digits identify the part and the last four identify the lesson. Each file is a JSON array; every object becomes a card and must have non-empty `hanzi`, `pinyin`, and `meaning` strings:
+
+```json
+[
+  { "hanzi": "你好", "pinyin": "nǐ hǎo", "meaning": "xin chào" },
+  { "hanzi": "谢谢", "pinyin": "xiè xie", "meaning": "cảm ơn" }
+]
+```
+
+After adding, renaming, or removing lesson files, run this command from the project root and include the updated `lessons/data/index.json` when publishing:
+
+```sh
+python3 scripts/lessons/update_index.py
+```
+
+The catalog is needed because the static site cannot list files in a directory. `0001-0001.json` is an example lesson that you can edit or replace. Serve the site over HTTP to load the catalog and lessons.
