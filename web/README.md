@@ -1,6 +1,6 @@
 # Web version
 
-This static browser app has its own `data/` stroke cache. It does not read files from `local/`.
+This static browser app has its own `worksheet/data/` stroke cache. It does not read files from `local/`.
 
 Hosted version: <https://khangtranminh.github.io/hanzi-writing-sheet/>. GitHub Actions deploys `web/` whenever a commit is pushed to `main`.
 
@@ -14,11 +14,11 @@ python3 -m http.server 8000 --directory web
 
 Open <http://localhost:8000/> and choose **Tạo trang luyện viết** or **Luyện tập**. The worksheet opens in a new tab; choose **In / lưu PDF** and then **Save as PDF** in the browser print dialog.
 
-The worksheet reads cached stroke data from `data/` first and fetches missing characters from Hanzi Writer Data. The bundled `pinyin-pro` library provides pinyin locally.
+The worksheet reads cached stroke data from `worksheet/data/` first and fetches missing characters from Hanzi Writer Data. The bundled `pinyin-pro` library provides pinyin locally.
 
 ## Practice cards
 
-Edit `practice-data.json` to change the cards. It is a JSON array of objects with a required non-empty `hanzi` string and an optional `pinyin` string:
+Edit `practice/data.json` to change the cards. It is a JSON array of objects with a required non-empty `hanzi` string and an optional `pinyin` string:
 
 ```json
 [
@@ -31,7 +31,7 @@ Missing or blank pinyin is generated locally with `pinyin-pro` for the whole wor
 
 ### Changing how cards advance
 
-Open `web/practice.js` and change the `ADVANCE_MODE` constant near the top:
+Open `web/practice/practice.js` and change the `ADVANCE_MODE` constant near the top:
 
 ```js
 const ADVANCE_MODE = "manual";
@@ -42,12 +42,13 @@ const ADVANCE_MODE = "manual";
 
 To change the automatic delay, edit `AUTO_ADVANCE_DELAY` in the same file; its value is in milliseconds (`1500` means 1.5 seconds). Reload the page after editing.
 
-When updating the version, also change the `v` query value on the practice link and stylesheet in `index.html`, and the stylesheet and script references in `practice.html`, to match. This gives browsers new URLs for updated files. The practice data is revalidated when it is loaded.
+When updating the version, also change the `v` query value on the practice link and stylesheet in `index.html`, and the stylesheet and script references in `practice/index.html`, to match. This gives browsers new URLs for updated files. The practice data is revalidated when it is loaded.
 
-To fill missing pinyin in the JSON on macOS, run from the project root:
+Run the script from the project root on macOS. It uses the bundled `pinyin-pro` and JavaScriptCore; it does not need network access or Node.js. Each command updates its input file in place:
 
-```sh
-python3 web/scripts/update-pinyin.py
-```
-
-The script uses the bundled `pinyin-pro` and macOS JavaScriptCore; it does not need network access or Node.js. Existing pinyin and other fields are preserved. Use `--all` to regenerate every reading, including manually entered pinyin. Use `--file path/to/file.json` to update a different JSON file.
+- **Default:** fill missing pinyin in `web/practice/data.json`, preserving existing values.
+  `python3 scripts/update-web-practice-pinyin.py`
+- **`--file`:** update a different JSON file, preserving existing values.
+  `python3 scripts/update-web-practice-pinyin.py --file private/practice.json`
+- **`--all`:** regenerate every pinyin value in the default file.
+  `python3 scripts/update-web-practice-pinyin.py --all`

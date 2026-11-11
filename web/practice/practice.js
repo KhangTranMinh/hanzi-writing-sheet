@@ -54,7 +54,7 @@
     retry.hidden = true;
     status.textContent = "Đang chuẩn bị thẻ…";
     try {
-      const response = await fetch("practice-data.json", { cache: "no-cache" });
+      const response = await fetch("data.json", { cache: "no-cache" });
       if (!response.ok) throw new Error("Không tải được danh sách luyện tập.");
       const data = await response.json();
       if (!Array.isArray(data) || !data.length) throw new Error("Danh sách luyện tập đang trống hoặc không hợp lệ.");

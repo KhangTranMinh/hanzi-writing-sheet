@@ -1,5 +1,14 @@
 #!/usr/bin/env python3
-"""Fill missing practice readings using the bundled pinyin-pro on macOS."""
+"""Update pinyin on macOS using the bundled pinyin-pro.
+
+- Default: update missing pinyin in web/practice/data.json in place.
+  Example: python3 scripts/update-web-practice-pinyin.py
+- --file: update a different JSON file in place.
+  Example: python3 scripts/update-web-practice-pinyin.py --file private/practice.json
+- --all: regenerate all pinyin, including existing values.
+  Example: python3 scripts/update-web-practice-pinyin.py --all
+"""
+
 import argparse
 import json
 import subprocess
@@ -7,14 +16,14 @@ import sys
 import tempfile
 from pathlib import Path
 
-WEB = Path(__file__).resolve().parent.parent
+WEB = Path(__file__).resolve().parent.parent / 'web'
 JSC = Path('/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Helpers/jsc')
 
 
 def main():
     parser = argparse.ArgumentParser(description='Update pinyin in the practice JSON using the bundled pinyin-pro.')
     parser.add_argument('--all', action='store_true', help='Replace existing pinyin too (including manual readings).')
-    parser.add_argument('--file', type=Path, default=WEB / 'practice-data.json', help='JSON file to update.')
+    parser.add_argument('--file', type=Path, default=WEB / 'practice' / 'data.json', help='JSON file to update.')
     args = parser.parse_args()
     try:
         data = json.loads(args.file.read_text(encoding='utf-8'))
@@ -36,7 +45,7 @@ def main():
             return
         if not JSC.is_file():
             raise RuntimeError('JavaScriptCore was not found. This script requires macOS.')
-        library = (WEB / 'vendor' / 'pinyin-pro.min.js').read_text(encoding='utf-8')
+        library = (WEB / 'assets' / 'vendor' / 'pinyin-pro.min.js').read_text(encoding='utf-8')
         code = library + '\nconst words = ' + json.dumps(words, ensure_ascii=True) + ';\n' + (
             'print(JSON.stringify(words.map(word => pinyinPro.pinyin(word))));\n'
         )
