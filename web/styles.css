@@ -81,9 +81,10 @@ textarea:focus { border-color: #80916e; box-shadow: 0 0 0 3px rgba(128, 145, 110
 .home-option small { margin-top: 6px; color: #77746b; font-size: 13px; line-height: 1.5; }
 .option-icon { display: grid; flex: 0 0 52px; height: 52px; place-items: center; border-radius: 12px; background: #edf3e9; color: #536b47; font-size: 26px; }
 .option-arrow { margin-left: auto; color: #819275; font-size: 20px; }
+.app-version { margin-top: 24px; color: #77746b; font-size: 11px; text-align: center; }
 .practice-area { max-width: 520px; margin: 0 auto; }
 .practice-status { min-height: 22px; color: #66775a; font-size: 14px; font-weight: 700; text-align: center; }
-.practice-card { display: block; width: min(100%, 440px); margin: 0 auto; padding: 0; border: 0; background: transparent; cursor: pointer; }
+.practice-card { display: block; width: min(100%, 440px); margin: 0 auto; padding: 0; border: 0; appearance: none; -webkit-appearance: none; background: transparent; color: inherit; cursor: pointer; -webkit-tap-highlight-color: transparent; }
 .practice-card[hidden], .practice-hint[hidden], .generate-button[hidden] { display: none; }
 .card-inner { display: flex; width: 100%; min-height: clamp(220px, 55vw, 320px); flex-direction: column; align-items: center; justify-content: center; gap: 12px; padding: 24px; overflow-wrap: anywhere; text-align: center; border: 1px solid #e5e1d8; border-radius: 18px; background: #fffefa; box-shadow: 0 18px 50px rgba(55, 49, 35, .09); }
 .card-hanzi { max-width: 100%; font-family: "PingFang SC", "Noto Sans CJK SC", sans-serif; font-size: clamp(56px, 14vw, 96px); }

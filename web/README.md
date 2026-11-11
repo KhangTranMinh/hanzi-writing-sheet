@@ -4,6 +4,8 @@ This static browser app has its own `data/` stroke cache. It does not read files
 
 Hosted version: <https://khangtranminh.github.io/hanzi-writing-sheet/>. GitHub Actions deploys `web/` whenever a commit is pushed to `main`.
 
+The home page reads the version from `version.json` in the format `YY.MM.DD.xx`. Update this file when releasing a new version: use the date in Vietnam and increment `xx` for each release that day, starting at `01`. This is a manual step; commits and deployments do not change it automatically.
+
 From the project root, serve only this folder:
 
 ```sh
@@ -39,6 +41,8 @@ const ADVANCE_MODE = "manual";
 - `"automatic"`: advance automatically after 1.5 seconds; tapping the revealed card advances immediately.
 
 To change the automatic delay, edit `AUTO_ADVANCE_DELAY` in the same file; its value is in milliseconds (`1500` means 1.5 seconds). Reload the page after editing.
+
+When updating the practice page or its assets, change the `v` query value on the practice link in `index.html` and the stylesheet and script references in `practice.html` to the new version. This gives browsers new URLs for updated files. The practice data is revalidated when it is loaded.
 
 To fill missing pinyin in the JSON on macOS, run from the project root:
 
