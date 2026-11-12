@@ -127,7 +127,7 @@ export default function GeneratorScreen() {
         >
           <Text accessibilityRole="link" onPress={() => router.back()} style={{ color: '#536b47', fontWeight: '700', marginBottom: 25 }}>← Trang chủ</Text>
           <View style={styles.header}>
-            <Text style={styles.eyebrow}>HANZI WRITING SHEET</Text>
+            <Text style={styles.eyebrow}>HANZI LEARNING</Text>
             <Text style={styles.title}>Tạo trang luyện viết</Text>
             <Text style={styles.subtitle}>
               Nhập chữ Hán để tạo worksheet, hoặc chọn trang trống để tự luyện viết.

@@ -193,14 +193,14 @@ html, body { width: 210mm; height: 297mm; margin: 0; padding: 0; background: whi
       }
       pages.push(`<main class="sheet">${pagePanels.join("")}</main>`);
     }
-    return documentHtml("Hanzi writing practice", worksheetCss, `${toolbar()}${pages.join("")}`);
+    return documentHtml("Hanzi Learning — Worksheet", worksheetCss, `${toolbar()}${pages.join("")}`);
   }
 
   function renderBlank() {
     const guide = `<svg class="guide" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">${GUIDE}</svg>`;
     const cell = `<div class="cell">${guide}</div>`;
     const cells = cell.repeat(COLS * ROWS);
-    return documentHtml("Blank Hanzi writing practice", blankCss, `${toolbar()}<main class="sheet">${cells}</main>`);
+    return documentHtml("Hanzi Learning — Blank worksheet", blankCss, `${toolbar()}<main class="sheet">${cells}</main>`);
   }
 
   function writeTab(tab, html) {

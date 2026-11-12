@@ -4,11 +4,19 @@ This Expo + React Native app for Android and iOS uses data from `../shared/data/
 
 ## Start developing
 
+Install Node.js, npm, and Python 3, then install dependencies from the `react-native/` directory:
+
+```sh
+npm ci
+```
+
+Start the development server from the same directory:
+
 ```sh
 npm start
 ```
 
-The app offers writing sheets, lessons, and practice cards. The npm start, android, ios, and web scripts first sync shared data automatically. After editing shared data while the server is running, restart it. Before other build commands (including cloud builds), run `python3 ../scripts/shared_data/publish_shared_data.py` and include the generated app data in the build. To start Expo and open the Android emulator or iOS simulator, use:
+The app offers writing sheets, lessons, and practice cards. Parts and lessons appear in descending numerical order. The npm start, android, ios, and web scripts first sync shared data automatically. After editing shared data while the server is running, restart it. Before other build commands (including cloud builds), run `python3 ../scripts/shared_data/publish_shared_data.py` and include the generated app data in the build. To build and run the native app on an Android emulator or iOS simulator, use the appropriate command below. This requires the corresponding Android or iOS development tools:
 
 ```sh
 npm run android

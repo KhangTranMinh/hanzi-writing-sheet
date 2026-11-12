@@ -188,7 +188,7 @@ def render(panels):
         pages.append('<main class="sheet">' + ''.join(page_panels) + '</main>')
     return ('<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8">'
             '<meta name="viewport" content="width=device-width,initial-scale=1">'
-            '<title>Hanzi writing practice</title><style>' + CSS + '</style></head><body>'
+            '<title>Hanzi Learning — Worksheet</title><style>' + CSS + '</style></head><body>'
             + ''.join(pages) + '</body></html>')
 
 

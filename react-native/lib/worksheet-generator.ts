@@ -189,7 +189,7 @@ function documentHtml(title: string, css: string, content: string): string {
 export function renderBlankHtml(): string {
   const cell = `<div class="cell"><svg class="guide" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">${GUIDE}</svg></div>`;
   return documentHtml(
-    'Blank Hanzi writing practice',
+    'Hanzi Learning — Blank worksheet',
     blankCss,
     `<main class="sheet">${cell.repeat(11 * 16)}</main>`,
   );
@@ -209,5 +209,5 @@ export async function renderWorksheetHtml(input: string): Promise<string> {
     }
     pages.push(`<main class="sheet">${pagePanels.join('')}</main>`);
   }
-  return documentHtml('Hanzi writing practice', worksheetCss, pages.join(''));
+  return documentHtml('Hanzi Learning — Worksheet', worksheetCss, pages.join(''));
 }

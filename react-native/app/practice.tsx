@@ -19,7 +19,7 @@ export default function PracticeScreen() {
   function next() { if (!revealed) setRevealed(true); else { setIndex(index + 1); setRevealed(false); } }
   return <SafeAreaView style={styles.screen}><ScrollView contentContainerStyle={styles.content}>
     <Text accessibilityRole="link" onPress={() => router.back()} style={styles.back}>← Trang chủ</Text>
-    <Text style={styles.eyebrow}>HANZI WRITING PRACTICE</Text><Text style={styles.title}>Luyện tập</Text>
+    <Text style={styles.eyebrow}>HANZI LEARNING</Text><Text style={styles.title}>Luyện tập</Text>
     <Text style={styles.subtitle}>Đọc chữ Hán, rồi chạm vào thẻ để xem pinyin và nghĩa.</Text>
     <Text style={styles.status}>{current ? `Thẻ ${index + 1} / ${items.length}` : `Đã hoàn thành ${items.length} thẻ!`}</Text>
     {current ? <><Pressable accessibilityRole="button" accessibilityLabel={revealed ? `Pinyin: ${current.pinyin}. ${current.meaning ? `Nghĩa: ${current.meaning}. ` : ''}Chạm để chuyển thẻ tiếp theo` : 'Chạm để xem pinyin và nghĩa'} onPress={next} style={styles.card}>

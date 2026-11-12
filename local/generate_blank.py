@@ -68,7 +68,7 @@ html, body {{ width: 210mm; height: 297mm; margin: 0; padding: 0; background: wh
               'stroke-dasharray="35 27"/></svg>')
     cell = '<div class="cell">' + guides + '</div>'
     return ('<!DOCTYPE html><html lang="vi"><head><meta charset="utf-8">'
-            '<title>Blank Hanzi Writing Practice</title><style>' + css
+            '<title>Hanzi Learning — Blank worksheet</title><style>' + css
             + '</style></head><body><main class="sheet">'
             + cell * (COLS * ROWS) + '</main></body></html>')
 

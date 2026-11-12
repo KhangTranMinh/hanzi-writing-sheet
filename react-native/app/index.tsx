@@ -4,7 +4,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function HomeScreen() {
   return <SafeAreaView style={styles.screen}><ScrollView contentContainerStyle={styles.content}>
-    <Text style={styles.eyebrow}>HANZI WRITING PRACTICE</Text>
+    <Text style={styles.eyebrow}>HANZI LEARNING</Text>
     <Text style={styles.title}>Cùng luyện chữ Hán</Text>
     <Text style={styles.subtitle}>Chọn một cách học để bắt đầu.</Text>
     {([

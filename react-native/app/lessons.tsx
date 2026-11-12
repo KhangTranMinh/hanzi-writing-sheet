@@ -12,7 +12,7 @@ export default function LessonsScreen() {
   const lesson = selected ? lessons[selected] : null;
   return <SafeAreaView style={styles.screen}><ScrollView contentContainerStyle={styles.content}>
     <Text accessibilityRole="link" onPress={() => selected ? setSelected(null) : router.back()} style={styles.back}>{selected ? '← Danh sách bài học' : '← Trang chủ'}</Text>
-    <Text style={styles.eyebrow}>HANZI WRITING PRACTICE</Text>
+    <Text style={styles.eyebrow}>HANZI LEARNING</Text>
     <Text style={styles.title}>{lesson && selected ? `Bài ${Number(selected.slice(5))} · ${lesson.title}` : 'Bài học'}</Text>
     <Text style={styles.subtitle}>{selected ? `Phần ${Number(selected.slice(0, 4))} · Bài ${Number(selected.slice(5))}` : 'Chọn phần và bài học để xem các thẻ chữ Hán.'}</Text>
     {lesson ? lesson.items.map((item, index) => <View key={index} style={styles.card}>
