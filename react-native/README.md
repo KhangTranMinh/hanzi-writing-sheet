@@ -1,6 +1,6 @@
 # React Native app
 
-This Expo + React Native app for Android and iOS uses data from `../shared/data/`, also used by the web app. Data is copied into the app bundle by `scripts/shared/sync.py`. The app receives new data with a new build; it does not fetch lessons or practice cards remotely.
+This Expo + React Native app for Android and iOS uses data from `../shared/data/`, also used by the web app. Data is copied into the app bundle by `scripts/shared_data/publish_shared_data.py`. The app receives new data with a new build; it does not fetch lessons or practice cards remotely.
 
 ## Start developing
 
@@ -8,7 +8,7 @@ This Expo + React Native app for Android and iOS uses data from `../shared/data/
 npm start
 ```
 
-The app offers writing sheets, lessons, and practice cards. The npm start, android, ios, and web scripts first sync shared data automatically. After editing shared data while the server is running, restart it. Before other build commands (including cloud builds), run `python3 ../scripts/shared/sync.py` and include the generated app data in the build. To start Expo and open the Android emulator or iOS simulator, use:
+The app offers writing sheets, lessons, and practice cards. The npm start, android, ios, and web scripts first sync shared data automatically. After editing shared data while the server is running, restart it. Before other build commands (including cloud builds), run `python3 ../scripts/shared_data/publish_shared_data.py` and include the generated app data in the build. To start Expo and open the Android emulator or iOS simulator, use:
 
 ```sh
 npm run android

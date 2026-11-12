@@ -26,7 +26,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v6
       - name: Sync shared data
-        run: python3 scripts/shared/sync.py
+        run: python3 scripts/shared_data/publish_shared_data.py
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload web app

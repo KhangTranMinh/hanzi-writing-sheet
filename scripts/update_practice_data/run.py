@@ -2,15 +2,15 @@
 """Update pinyin and English meanings in web practice data on macOS.
 
 - Default: update missing pinyin and meanings in shared/data/practice/data.json in place.
-  Example: python3 scripts/web-practice-data/run.py
+  Example: python3 scripts/update_practice_data/run.py
 - --file: update a different JSON file in place.
-  Example: python3 scripts/web-practice-data/run.py --file private/practice.json
+  Example: python3 scripts/update_practice_data/run.py --file private/practice.json
 - --all: regenerate pinyin and meanings, including existing values.
-  Example: python3 scripts/web-practice-data/run.py --all
+  Example: python3 scripts/update_practice_data/run.py --all
 - --refresh: download a fresh CC-CEDICT dictionary before updating meanings.
-  Example: python3 scripts/web-practice-data/run.py --refresh
+  Example: python3 scripts/update_practice_data/run.py --refresh
 
-CC-CEDICT is stored in scripts/web-practice-data/; --refresh requires network access.
+CC-CEDICT is stored in scripts/update_practice_data/; --refresh requires network access.
 Only exact dictionary matches are used, and unmatched entries are reported.
 """
 import argparse
@@ -27,7 +27,7 @@ WEB = ROOT / 'web'
 DEFAULT_FILE = ROOT / 'shared' / 'data' / 'practice' / 'data.json'
 JSC = Path('/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Helpers/jsc')
 PINYIN_LIBRARY = WEB / 'assets' / 'vendor' / 'pinyin-pro' / 'pinyin-pro.min.js'
-DICTIONARY_CACHE = ROOT / 'scripts' / 'web-practice-data' / 'cc-cedict.u8'
+DICTIONARY_CACHE = ROOT / 'scripts' / 'update_practice_data' / 'cc-cedict.u8'
 DICTIONARY_URL = 'https://raw.githubusercontent.com/liamsaliba/cc-cedict-stardict/main/data/cedict_ts.u8'
 DICTIONARY_ENTRY = re.compile(r'^([^\s]+)\s+([^\s]+)\s+\[[^\]]+\]\s+/(.+)/\s*$')
 

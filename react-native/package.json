@@ -29,10 +29,10 @@
     "ios": "expo run:ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "prestart": "python3 ../scripts/shared/sync.py",
-    "preandroid": "python3 ../scripts/shared/sync.py",
-    "preios": "python3 ../scripts/shared/sync.py",
-    "preweb": "python3 ../scripts/shared/sync.py"
+    "prestart": "python3 ../scripts/shared_data/publish_shared_data.py",
+    "preandroid": "python3 ../scripts/shared_data/publish_shared_data.py",
+    "preios": "python3 ../scripts/shared_data/publish_shared_data.py",
+    "preweb": "python3 ../scripts/shared_data/publish_shared_data.py"
   },
   "private": true
 }

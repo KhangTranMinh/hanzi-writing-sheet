@@ -6,5 +6,5 @@ import sys
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[2]
-subprocess.run([sys.executable, str(root / 'scripts/shared/sync.py')], check=True)
+subprocess.run([sys.executable, str(root / 'scripts/shared_data/publish_shared_data.py')], check=True)
 os.execv(sys.executable, [sys.executable, '-m', 'http.server', '8000', '--directory', str(root / 'web')])

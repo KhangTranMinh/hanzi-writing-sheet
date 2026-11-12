@@ -1,6 +1,6 @@
 # Hanzi Writing Practice
 
-The project has three separate versions. `local/` contains the Python app and its inputs, `web/` contains the browser app, and `react-native/` contains the Android/iOS app. Each version is maintained independently.
+The project has three apps: `local/` contains the Python app and its inputs, `web/` contains the browser app, and `react-native/` contains the Android/iOS app. Web and React Native share learning data from `shared/data/`; the local Python app maintains its own inputs.
 
 ## GitHub authentication
 
@@ -20,8 +20,8 @@ GitHub Actions publishes the contents of `web/` to [GitHub Pages](https://khangt
 
 ## React Native app
 
-See [react-native/README.md](react-native/README.md). This Expo project is an independent mobile app for Android and iOS.
+See [react-native/README.md](react-native/README.md). This Expo project is a mobile app for Android and iOS that shares learning data with the web app.
 
 ## Shared data
 
-Edit lessons, practice cards and worksheet stroke data under `shared/data/`. The web server command, GitHub Pages workflow and React Native npm start/android/ios/web commands sync it automatically. Run `python3 scripts/shared/sync.py` before other builds or after editing data while a server is running. The generated web and React Native files are build inputs, not the source of truth. See the app READMEs for details.
+Edit lessons, practice cards and worksheet stroke data under `shared/data/`. The web server command, GitHub Pages workflow and React Native npm start/android/ios/web commands sync it automatically. Run `python3 scripts/shared_data/publish_shared_data.py` before other builds or after editing data while a server is running. The generated web and React Native files are build inputs, not the source of truth. See the app READMEs for details.

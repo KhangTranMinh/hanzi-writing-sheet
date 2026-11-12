@@ -9,7 +9,7 @@ The home page reads the version from `version.json` in the format `YY.MM.DD.xx`.
 From the project root, serve only this folder:
 
 ```sh
-python3 scripts/shared/serve.py
+python3 scripts/web/run_web_local.py
 ```
 
 Open <http://localhost:8000/> and choose **Tạo trang luyện viết** or **Luyện tập**. The worksheet opens in a new tab; choose **In / lưu PDF** and then **Save as PDF** in the browser print dialog.
@@ -49,15 +49,15 @@ When updating the version, also change the `v` query value on the practice link 
 Run the local script from the project root on macOS to fill missing pinyin and English meanings. It preserves existing values and updates its input file in place:
 
 - **Default:** update `shared/data/practice/data.json`.
-  `python3 scripts/web-practice-data/run.py`
+  `python3 scripts/update_practice_data/run.py`
 - **`--file`:** update a different JSON file.
-  `python3 scripts/web-practice-data/run.py --file private/practice.json`
+  `python3 scripts/update_practice_data/run.py --file private/practice.json`
 - **`--all`:** regenerate pinyin and English meanings, including existing values. If a word is not found in the dictionary, its existing meaning is kept and the word is reported.
-  `python3 scripts/web-practice-data/run.py --all`
+  `python3 scripts/update_practice_data/run.py --all`
 - **`--refresh`:** download a fresh CC-CEDICT dictionary before updating meanings.
-  `python3 scripts/web-practice-data/run.py --refresh`
+  `python3 scripts/update_practice_data/run.py --refresh`
 
-Pinyin uses the bundled `pinyin-pro` and macOS JavaScriptCore. English meanings use exact dictionary matches; unmatched entries are listed and left unchanged. Review suggestions because dictionary entries can have multiple meanings and do not account for context. The repository includes CC-CEDICT in `scripts/web-practice-data/`, so the script can run offline. Use `--refresh` to download an updated copy.
+Pinyin uses the bundled `pinyin-pro` and macOS JavaScriptCore. English meanings use exact dictionary matches; unmatched entries are listed and left unchanged. Review suggestions because dictionary entries can have multiple meanings and do not account for context. The repository includes CC-CEDICT in `scripts/update_practice_data/`, so the script can run offline. Use `--refresh` to download an updated copy.
 
 Dictionary data is from [CC-CEDICT](https://cc-cedict.org/), published by MDBG and its contributors, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The script downloads a copy from [cc-cedict-stardict](https://github.com/liamsaliba/cc-cedict-stardict). Meanings added from the dictionary retain that attribution and license.
 
@@ -78,7 +78,7 @@ Add lesson files in `shared/data/lessons/` at the project root, named `0001-0001
 Shared data is synced automatically when starting the web server and in GitHub Actions. To sync manually while the server is running, run:
 
 ```sh
-python3 scripts/shared/sync.py
+python3 scripts/shared_data/publish_shared_data.py
 ```
 
 The catalog is generated because the static site cannot list files in a directory. `0000-0000.json` is a template and is excluded from the catalog. `0001-0001.json` is an example lesson that you can edit or replace. Serve the site over HTTP to load the catalog and lessons.
