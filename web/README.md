@@ -18,16 +18,16 @@ The worksheet reads cached stroke data from `worksheet/data/` first and fetches 
 
 ## Practice cards
 
-Edit `practice/data.json` to change the cards. It is a JSON array of objects with a required non-empty `hanzi` string and an optional `pinyin` string:
+Edit `practice/data.json` to change the cards. It is a JSON array of objects with a required non-empty `hanzi` string and optional `pinyin` and `meaning` strings:
 
 ```json
 [
   { "hanzi": "你好" },
-  { "hanzi": "中国", "pinyin": "zhōng guó" }
+  { "hanzi": "中国", "pinyin": "zhōng guó", "meaning": "Trung Quốc" }
 ]
 ```
 
-Missing or blank pinyin is generated locally with `pinyin-pro` for the whole word. Supply pinyin explicitly when a particular reading is needed. After the cards are prepared, they are shuffled. Select a card to reveal its pinyin, then select it again to move on. At the end, select **Luyện lại** to start a new shuffled round. Serve the folder over HTTP as shown above so the browser can load the JSON file.
+Missing or blank pinyin is generated locally with `pinyin-pro` for the whole word. Supply pinyin explicitly when a particular reading is needed. After the cards are prepared, they are shuffled. Select a card to reveal its pinyin and any non-empty meaning, then select it again to move on. At the end, select **Luyện lại** to start a new shuffled round. Serve the folder over HTTP as shown above so the browser can load the JSON file.
 
 ### Changing how cards advance
 

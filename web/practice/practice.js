@@ -8,6 +8,7 @@
   const card = document.querySelector("#practice-card");
   const hanzi = document.querySelector("#card-hanzi");
   const pinyin = document.querySelector("#card-pinyin");
+  const meaning = document.querySelector("#card-meaning");
   const hint = document.querySelector("#practice-hint");
   const retry = document.querySelector("#practice-retry");
   let items = [];
@@ -28,8 +29,9 @@
     revealed = false;
     card.classList.remove("is-revealed");
     pinyin.setAttribute("aria-hidden", "true");
+    meaning.setAttribute("aria-hidden", "true");
     card.disabled = false;
-    card.setAttribute("aria-label", "Chạm để xem pinyin");
+    card.setAttribute("aria-label", "Chạm để xem pinyin và nghĩa");
     if (index >= items.length) {
       card.hidden = true;
       hint.hidden = true;
@@ -40,6 +42,8 @@
     }
     hanzi.textContent = items[index].hanzi;
     pinyin.textContent = items[index].pinyin;
+    meaning.textContent = items[index].meaning;
+    meaning.hidden = !items[index].meaning;
     status.textContent = `Thẻ ${index + 1} / ${items.length}`;
     card.hidden = false;
     hint.hidden = false;
@@ -65,6 +69,9 @@
         if (item.pinyin != null && typeof item.pinyin !== "string") {
           throw new Error(`Pinyin ở mục ${i + 1} không hợp lệ.`);
         }
+        if (item.meaning != null && typeof item.meaning !== "string") {
+          throw new Error(`Nghĩa ở mục ${i + 1} không hợp lệ.`);
+        }
         const text = item.hanzi.trim();
         let reading = item.pinyin?.trim();
         if (!reading) {
@@ -72,7 +79,7 @@
           reading = window.pinyinPro.pinyin(text);
           if (!reading || reading === text) throw new Error(`Không tìm được pinyin cho “${text}”.`);
         }
-        return { ...item, hanzi: text, pinyin: reading };
+        return { ...item, hanzi: text, pinyin: reading, meaning: item.meaning?.trim() || "" };
       });
       items = shuffle(prepared);
       index = 0;
@@ -99,7 +106,8 @@
     revealed = true;
     card.classList.add("is-revealed");
     pinyin.setAttribute("aria-hidden", "false");
-    card.setAttribute("aria-label", `Pinyin: ${items[index].pinyin}. Chạm để chuyển thẻ tiếp theo`);
+    meaning.setAttribute("aria-hidden", "false");
+    card.setAttribute("aria-label", `Pinyin: ${items[index].pinyin}.${items[index].meaning ? ` Nghĩa: ${items[index].meaning}.` : ""} Chạm để chuyển thẻ tiếp theo`);
     hint.textContent = ADVANCE_MODE === "automatic"
       ? "Chạm để chuyển ngay, hoặc chờ thẻ tiếp theo…"
       : "Chạm vào thẻ để tiếp tục";
@@ -110,7 +118,7 @@
     if (event.animationName === "card-exit") {
       card.classList.remove("card-exit");
       index++;
-      hint.textContent = "Chạm vào thẻ để xem pinyin";
+      hint.textContent = "Chạm vào thẻ để xem pinyin và nghĩa";
       showCard();
       if (!card.hidden) card.classList.add("card-enter");
     } else if (event.animationName === "card-enter") {

@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f4ef">
   <title>Luyện tập chữ Hán</title>
-  <link rel="stylesheet" href="../assets/styles.css?v=26.11.12.01">
+  <link rel="stylesheet" href="../assets/styles.css?v=26.11.12.02">
   <script src="../assets/vendor/pinyin-pro/pinyin-pro.min.js" defer></script>
-  <script src="practice.js?v=26.11.12.01" defer></script>
+  <script src="practice.js?v=26.11.12.02" defer></script>
 </head>
 <body>
   <main class="app-shell practice-shell">
@@ -15,17 +15,18 @@
     <header class="page-header">
       <div class="eyebrow">HANZI WRITING PRACTICE</div>
       <h1>Luyện tập</h1>
-      <p>Đọc chữ Hán, rồi chạm vào thẻ để xem pinyin.</p>
+      <p>Đọc chữ Hán, rồi chạm vào thẻ để xem pinyin và nghĩa.</p>
     </header>
     <section class="practice-area" aria-label="Thẻ luyện tập">
       <p id="practice-status" class="practice-status" role="status" aria-live="polite">Đang chuẩn bị thẻ…</p>
-      <button id="practice-card" class="practice-card" type="button" hidden aria-label="Chạm để xem pinyin">
+      <button id="practice-card" class="practice-card" type="button" hidden aria-label="Chạm để xem pinyin và nghĩa">
         <span class="card-inner">
           <span class="card-hanzi" id="card-hanzi"></span>
           <span class="card-pinyin" id="card-pinyin" aria-hidden="true"></span>
+          <span class="card-meaning" id="card-meaning" aria-hidden="true" hidden></span>
         </span>
       </button>
-      <p id="practice-hint" class="practice-hint" hidden>Chạm vào thẻ để xem pinyin</p>
+      <p id="practice-hint" class="practice-hint" hidden>Chạm vào thẻ để xem pinyin và nghĩa</p>
       <button id="practice-retry" class="generate-button" type="button" hidden>Thử lại</button>
     </section>
   </main>
