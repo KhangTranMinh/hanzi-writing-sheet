@@ -21,3 +21,7 @@ GitHub Actions publishes the contents of `web/` to [GitHub Pages](https://khangt
 ## React Native app
 
 See [react-native/README.md](react-native/README.md). This Expo project is an independent mobile app for Android and iOS.
+
+## Shared data
+
+Edit lessons, practice cards and worksheet stroke data under `shared/data/`. The web server command, GitHub Pages workflow and React Native npm start/android/ios/web commands sync it automatically. Run `python3 scripts/shared/sync.py` before other builds or after editing data while a server is running. The generated web and React Native files are build inputs, not the source of truth. See the app READMEs for details.

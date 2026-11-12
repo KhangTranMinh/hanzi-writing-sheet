@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Update pinyin and English meanings in web practice data on macOS.
 
-- Default: update missing pinyin and meanings in web/practice/data.json in place.
+- Default: update missing pinyin and meanings in shared/data/practice/data.json in place.
   Example: python3 scripts/web-practice-data/run.py
 - --file: update a different JSON file in place.
   Example: python3 scripts/web-practice-data/run.py --file private/practice.json
@@ -24,7 +24,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 WEB = ROOT / 'web'
-DEFAULT_FILE = WEB / 'practice' / 'data.json'
+DEFAULT_FILE = ROOT / 'shared' / 'data' / 'practice' / 'data.json'
 JSC = Path('/System/Library/Frameworks/JavaScriptCore.framework/Versions/A/Helpers/jsc')
 PINYIN_LIBRARY = WEB / 'assets' / 'vendor' / 'pinyin-pro' / 'pinyin-pro.min.js'
 DICTIONARY_CACHE = ROOT / 'scripts' / 'web-practice-data' / 'cc-cedict.u8'

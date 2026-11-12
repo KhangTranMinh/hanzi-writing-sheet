@@ -1,0 +1,60 @@
+{
+  "title": "Gọi món ăn, đồ uống",
+  "items": [
+    {
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "meaning": "Cốc"
+    },
+    {
+      "hanzi": "要",
+      "pinyin": "yào",
+      "meaning": "Phải"
+    },
+    {
+      "hanzi": "奶",
+      "pinyin": "nǎi",
+      "meaning": "Sữa"
+    },
+    {
+      "hanzi": "牛奶",
+      "pinyin": "niú nǎi",
+      "meaning": "Sữa bò"
+    },
+    {
+      "hanzi": "两",
+      "pinyin": "liǎng",
+      "meaning": "Hai"
+    },
+    {
+      "hanzi": "冰",
+      "pinyin": "bīng",
+      "meaning": "Băng"
+    },
+    {
+      "hanzi": "糖",
+      "pinyin": "táng",
+      "meaning": "Đường"
+    },
+    {
+      "hanzi": "不客气",
+      "pinyin": "bù kè qì",
+      "meaning": "Không có gì"
+    },
+    {
+      "hanzi": "绿",
+      "pinyin": "lǜ",
+      "meaning": "Màu xanh lá"
+    },
+    {
+      "hanzi": "绿茶",
+      "pinyin": "lǜ chá",
+      "meaning": "Trà xanh"
+    },
+    {
+      "hanzi": "谢谢",
+      "pinyin": "xiè xie",
+      "meaning": "Cảm ơn"
+    }
+  ]
+}

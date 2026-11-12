@@ -9,7 +9,7 @@ The home page reads the version from `version.json` in the format `YY.MM.DD.xx`.
 From the project root, serve only this folder:
 
 ```sh
-python3 -m http.server 8000 --directory web
+python3 scripts/shared/serve.py
 ```
 
 Open <http://localhost:8000/> and choose **Tạo trang luyện viết** or **Luyện tập**. The worksheet opens in a new tab; choose **In / lưu PDF** and then **Save as PDF** in the browser print dialog.
@@ -18,7 +18,7 @@ The worksheet reads cached stroke data from `worksheet/data/` first and fetches 
 
 ## Practice cards
 
-Edit `practice/data.json` to change the cards. It is a JSON array of objects with a required non-empty `hanzi` string and optional `pinyin` and `meaning` strings:
+Edit `shared/data/practice/data.json` at the project root to change the cards. It is a JSON array of objects with a required non-empty `hanzi` string and optional `pinyin` and `meaning` strings:
 
 ```json
 [
@@ -48,7 +48,7 @@ When updating the version, also change the `v` query value on the practice link 
 
 Run the local script from the project root on macOS to fill missing pinyin and English meanings. It preserves existing values and updates its input file in place:
 
-- **Default:** update `web/practice/data.json`.
+- **Default:** update `shared/data/practice/data.json`.
   `python3 scripts/web-practice-data/run.py`
 - **`--file`:** update a different JSON file.
   `python3 scripts/web-practice-data/run.py --file private/practice.json`
@@ -63,7 +63,7 @@ Dictionary data is from [CC-CEDICT](https://cc-cedict.org/), published by MDBG a
 
 ## Lessons
 
-Add lesson files in `lessons/data/`, named `0001-0001.json`, `0001-0002.json`, and so on. The first four digits identify the part and the last four identify the lesson. Each file is a JSON object with a non-empty `title` and an `items` array. Every item becomes a card and must have non-empty `hanzi`, `pinyin`, and `meaning` strings:
+Add lesson files in `shared/data/lessons/` at the project root, named `0001-0001.json`, `0001-0002.json`, and so on. The first four digits identify the part and the last four identify the lesson. Each file is a JSON object with a non-empty `title` and an `items` array. Every item becomes a card and must have non-empty `hanzi`, `pinyin`, and `meaning` strings:
 
 ```json
 {
@@ -75,10 +75,10 @@ Add lesson files in `lessons/data/`, named `0001-0001.json`, `0001-0002.json`, a
 }
 ```
 
-After adding, renaming, or removing lesson files, run this command from the project root and include the updated `lessons/data/index.json` when publishing:
+Shared data is synced automatically when starting the web server and in GitHub Actions. To sync manually while the server is running, run:
 
 ```sh
-python3 scripts/lessons/update_index.py
+python3 scripts/shared/sync.py
 ```
 
-The catalog is needed because the static site cannot list files in a directory. `0001-0001.json` is an example lesson that you can edit or replace. Serve the site over HTTP to load the catalog and lessons.
+The catalog is generated because the static site cannot list files in a directory. `0000-0000.json` is a template and is excluded from the catalog. `0001-0001.json` is an example lesson that you can edit or replace. Serve the site over HTTP to load the catalog and lessons.

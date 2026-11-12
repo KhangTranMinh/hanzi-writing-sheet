@@ -1,0 +1,792 @@
+[
+  {
+    "hanzi": "陈明康",
+    "pinyin": "chén míng kāng",
+    "meaning": "Trần Minh Khang"
+  },
+  {
+    "hanzi": "黄越芳",
+    "pinyin": "huáng yuè fāng",
+    "meaning": "Hoàng Việt Phương"
+  },
+  {
+    "hanzi": "陈日东",
+    "pinyin": "chén rì dōng",
+    "meaning": "Trần Nhật Đông"
+  },
+  {
+    "hanzi": "陈日姜",
+    "pinyin": "chén rì jiāng",
+    "meaning": "Trần Nhật Khương"
+  },
+  {
+    "hanzi": "再见",
+    "pinyin": "zài jiàn",
+    "meaning": "Tạm biệt"
+  },
+  {
+    "hanzi": "老婆，回家吧！",
+    "pinyin": "lǎo pó ， huí jiā ba ！",
+    "meaning": "Vợ ơi, về nhà thôi!"
+  },
+  {
+    "hanzi": "好兄弟",
+    "pinyin": "hǎo xiōng dì",
+    "meaning": "Anh em tốt"
+  },
+  {
+    "hanzi": "我们是好兄弟",
+    "pinyin": "wǒ men shì hǎo xiōng dì",
+    "meaning": "Chúng tôi là anh em tốt"
+  },
+  {
+    "hanzi": "你说什么？",
+    "pinyin": "nǐ shuō shén me ？",
+    "meaning": "Bạn nói gì vậy?"
+  },
+  {
+    "hanzi": "我到了",
+    "pinyin": "wǒ dào le",
+    "meaning": "Tôi đã đến"
+  },
+  {
+    "hanzi": "见面吗？",
+    "pinyin": "jiàn miàn ma ？",
+    "meaning": "Gặp mặt à?"
+  },
+  {
+    "hanzi": "明天见",
+    "pinyin": "míng tiān jiàn",
+    "meaning": "Ngày mai gặp"
+  },
+  {
+    "hanzi": "一",
+    "pinyin": "yī",
+    "meaning": "Một"
+  },
+  {
+    "hanzi": "二",
+    "pinyin": "èr",
+    "meaning": "Hai"
+  },
+  {
+    "hanzi": "三",
+    "pinyin": "sān",
+    "meaning": "Ba"
+  },
+  {
+    "hanzi": "四",
+    "pinyin": "sì",
+    "meaning": "Bốn"
+  },
+  {
+    "hanzi": "五",
+    "pinyin": "wǔ",
+    "meaning": "Năm"
+  },
+  {
+    "hanzi": "六",
+    "pinyin": "liù",
+    "meaning": "Sáu"
+  },
+  {
+    "hanzi": "七",
+    "pinyin": "qī",
+    "meaning": "Bảy"
+  },
+  {
+    "hanzi": "八",
+    "pinyin": "bā",
+    "meaning": "Tám"
+  },
+  {
+    "hanzi": "九",
+    "pinyin": "jiǔ",
+    "meaning": "Chín"
+  },
+  {
+    "hanzi": "十",
+    "pinyin": "shí",
+    "meaning": "Mười"
+  },
+  {
+    "hanzi": "零",
+    "pinyin": "líng",
+    "meaning": "Không"
+  },
+  {
+    "hanzi": "热",
+    "pinyin": "rè",
+    "meaning": "Nóng"
+  },
+  {
+    "hanzi": "水",
+    "pinyin": "shuǐ",
+    "meaning": "Nước"
+  },
+  {
+    "hanzi": "咖啡",
+    "pinyin": "kā fēi",
+    "meaning": "Cà phê"
+  },
+  {
+    "hanzi": "茶",
+    "pinyin": "chá",
+    "meaning": "Trà"
+  },
+  {
+    "hanzi": "这是",
+    "pinyin": "zhè shì",
+    "meaning": "Đây là"
+  },
+  {
+    "hanzi": "和",
+    "pinyin": "hé",
+    "meaning": "Và"
+  },
+  {
+    "hanzi": "米饭",
+    "pinyin": "mǐ fàn",
+    "meaning": "Cơm"
+  },
+  {
+    "hanzi": "粥",
+    "pinyin": "zhōu",
+    "meaning": "Cháo"
+  },
+  {
+    "hanzi": "汤",
+    "pinyin": "tāng",
+    "meaning": "Súp"
+  },
+  {
+    "hanzi": "豆腐",
+    "pinyin": "dòu fǔ",
+    "meaning": "Đậu phụ"
+  },
+  {
+    "hanzi": "我",
+    "pinyin": "wǒ",
+    "meaning": "Tôi"
+  },
+  {
+    "hanzi": "你",
+    "pinyin": "nǐ",
+    "meaning": "Bạn"
+  },
+  {
+    "hanzi": "是",
+    "pinyin": "shì",
+    "meaning": "Là"
+  },
+  {
+    "hanzi": "中国",
+    "pinyin": "zhōng guó",
+    "meaning": "Trung Quốc"
+  },
+  {
+    "hanzi": "韩国",
+    "pinyin": "hán guó",
+    "meaning": "Hàn Quốc"
+  },
+  {
+    "hanzi": "日本",
+    "pinyin": "rì běn",
+    "meaning": "Nhật Bản"
+  },
+  {
+    "hanzi": "美国",
+    "pinyin": "měi guó",
+    "meaning": "Mỹ"
+  },
+  {
+    "hanzi": "越南",
+    "pinyin": "yuè nán",
+    "meaning": "Việt Nam"
+  },
+  {
+    "hanzi": "人",
+    "pinyin": "rén",
+    "meaning": "Người"
+  },
+  {
+    "hanzi": "你呢",
+    "pinyin": "nǐ ne",
+    "meaning": "Bạn thì sao?"
+  },
+  {
+    "hanzi": "嗨",
+    "pinyin": "hāi",
+    "meaning": "Chào"
+  },
+  {
+    "hanzi": "老师",
+    "pinyin": "lǎo shī",
+    "meaning": "Giáo viên"
+  },
+  {
+    "hanzi": "学生",
+    "pinyin": "xué shēng",
+    "meaning": "Học sinh"
+  },
+  {
+    "hanzi": "律师",
+    "pinyin": "lǜ shī",
+    "meaning": "Luật sư"
+  },
+  {
+    "hanzi": "医生",
+    "pinyin": "yī shēng",
+    "meaning": "Bác sĩ"
+  },
+  {
+    "hanzi": "中文",
+    "pinyin": "zhōng wén",
+    "meaning": "Tiếng Trung"
+  },
+  {
+    "hanzi": "英文",
+    "pinyin": "yīng wén",
+    "meaning": "Tiếng Anh"
+  },
+  {
+    "hanzi": "对",
+    "pinyin": "duì",
+    "meaning": "Đúng"
+  },
+  {
+    "hanzi": "对不对",
+    "pinyin": "duì bú duì",
+    "meaning": "Đúng không?"
+  },
+  {
+    "hanzi": "说",
+    "pinyin": "shuō",
+    "meaning": "Nói"
+  },
+  {
+    "hanzi": "大学生",
+    "pinyin": "dà xué shēng",
+    "meaning": "Sinh viên đại học"
+  },
+  {
+    "hanzi": "课",
+    "pinyin": "kè",
+    "meaning": "Bài học"
+  },
+  {
+    "hanzi": "音乐",
+    "pinyin": "yīn yuè",
+    "meaning": "Âm nhạc"
+  },
+  {
+    "hanzi": "数学",
+    "pinyin": "shù xué",
+    "meaning": "Toán học"
+  },
+  {
+    "hanzi": "她",
+    "pinyin": "tā",
+    "meaning": "Cô ấy"
+  },
+  {
+    "hanzi": "他",
+    "pinyin": "tā",
+    "meaning": "Anh ấy"
+  },
+  {
+    "hanzi": "上",
+    "pinyin": "shàng",
+    "meaning": "Học - lên lớp"
+  },
+  {
+    "hanzi": "喜欢",
+    "pinyin": "xǐ huān",
+    "meaning": "Thích"
+  },
+  {
+    "hanzi": "的",
+    "pinyin": "de",
+    "meaning": "của"
+  },
+  {
+    "hanzi": "爸爸",
+    "pinyin": "bà ba",
+    "meaning": "Ba"
+  },
+  {
+    "hanzi": "妈妈",
+    "pinyin": "mā ma",
+    "meaning": "Mẹ"
+  },
+  {
+    "hanzi": "儿子",
+    "pinyin": "ér zi",
+    "meaning": "Con trai"
+  },
+  {
+    "hanzi": "女儿",
+    "pinyin": "nǚ ér",
+    "meaning": "Con gái"
+  },
+  {
+    "hanzi": "老公",
+    "pinyin": "lǎo gōng",
+    "meaning": "Chồng"
+  },
+  {
+    "hanzi": "老婆",
+    "pinyin": "lǎo pó",
+    "meaning": "Vợ"
+  },
+  {
+    "hanzi": "英国",
+    "pinyin": "yīng guó",
+    "meaning": "Anh Quốc"
+  },
+  {
+    "hanzi": "加拿大",
+    "pinyin": "jiā ná dà",
+    "meaning": "Canada"
+  },
+  {
+    "hanzi": "吗？",
+    "pinyin": "ma ？",
+    "meaning": "phải không?"
+  },
+  {
+    "hanzi": "也",
+    "pinyin": "yě",
+    "meaning": "cũng"
+  },
+  {
+    "hanzi": "中学生",
+    "pinyin": "zhōng xué shēng",
+    "meaning": "Học sinh trung học"
+  },
+  {
+    "hanzi": "去",
+    "pinyin": "qù",
+    "meaning": "Đi"
+  },
+  {
+    "hanzi": "零食",
+    "pinyin": "líng shí",
+    "meaning": "Đồ ăn vặt"
+  },
+  {
+    "hanzi": "常常",
+    "pinyin": "cháng cháng",
+    "meaning": "Thường xuyên"
+  },
+  {
+    "hanzi": "不常",
+    "pinyin": "bù cháng",
+    "meaning": "Không thường xuyên"
+  },
+  {
+    "hanzi": "吃",
+    "pinyin": "chī",
+    "meaning": "Ăn"
+  },
+  {
+    "hanzi": "菜",
+    "pinyin": "cài",
+    "meaning": "Rau"
+  },
+  {
+    "hanzi": "书",
+    "pinyin": "shū",
+    "meaning": "Sách"
+  },
+  {
+    "hanzi": "看",
+    "pinyin": "kàn",
+    "meaning": "Nhìn"
+  },
+  {
+    "hanzi": "书店",
+    "pinyin": "shū diàn",
+    "meaning": "Hiệu sách"
+  },
+  {
+    "hanzi": "超市",
+    "pinyin": "chāo shì",
+    "meaning": "Siêu thị"
+  },
+  {
+    "hanzi": "韩文",
+    "pinyin": "hán wén",
+    "meaning": "Tiếng Hàn"
+  },
+  {
+    "hanzi": "买",
+    "pinyin": "mǎi",
+    "meaning": "Mua"
+  },
+  {
+    "hanzi": "杯",
+    "pinyin": "bēi",
+    "meaning": "Cốc"
+  },
+  {
+    "hanzi": "要",
+    "pinyin": "yào",
+    "meaning": "Muốn"
+  },
+  {
+    "hanzi": "奶",
+    "pinyin": "nǎi",
+    "meaning": "Sữa"
+  },
+  {
+    "hanzi": "牛奶",
+    "pinyin": "niú nǎi",
+    "meaning": "Sữa bò"
+  },
+  {
+    "hanzi": "两",
+    "pinyin": "liǎng",
+    "meaning": "Hai"
+  },
+  {
+    "hanzi": "冰",
+    "pinyin": "bīng",
+    "meaning": "Đá"
+  },
+  {
+    "hanzi": "糖",
+    "pinyin": "táng",
+    "meaning": "Đường"
+  },
+  {
+    "hanzi": "不客气",
+    "pinyin": "bù kè qì",
+    "meaning": "Không có gì"
+  },
+  {
+    "hanzi": "绿",
+    "pinyin": "lǜ",
+    "meaning": "Xanh lá"
+  },
+  {
+    "hanzi": "绿茶",
+    "pinyin": "lǜ chá",
+    "meaning": "Trà xanh"
+  },
+  {
+    "hanzi": "谢谢",
+    "pinyin": "xiè xiè",
+    "meaning": "Cảm ơn"
+  },
+  {
+    "hanzi": "手机",
+    "pinyin": "shǒu jī",
+    "meaning": "Điện thoại di động"
+  },
+  {
+    "hanzi": "钱包",
+    "pinyin": "qián bāo",
+    "meaning": "Túi tiền"
+  },
+  {
+    "hanzi": "在",
+    "pinyin": "zài",
+    "meaning": "Tại"
+  },
+  {
+    "hanzi": "这里",
+    "pinyin": "zhè lǐ",
+    "meaning": "Ở đây"
+  },
+  {
+    "hanzi": "哪里",
+    "pinyin": "nǎ lǐ",
+    "meaning": "Ở đâu"
+  },
+  {
+    "hanzi": "洗手间",
+    "pinyin": "xǐ shǒu jiān",
+    "meaning": "Nhà vệ sinh"
+  },
+  {
+    "hanzi": "火车站",
+    "pinyin": "huǒ chē zhàn",
+    "meaning": "Ga tàu hỏa"
+  },
+  {
+    "hanzi": "火车",
+    "pinyin": "huǒ chē",
+    "meaning": "Tàu hỏa"
+  },
+  {
+    "hanzi": "车票",
+    "pinyin": "chē piào",
+    "meaning": "Vé tàu"
+  },
+  {
+    "hanzi": "第",
+    "pinyin": "dì",
+    "meaning": "Thứ"
+  },
+  {
+    "hanzi": "第一",
+    "pinyin": "dì yī",
+    "meaning": "Thứ nhất"
+  },
+  {
+    "hanzi": "第二",
+    "pinyin": "dì èr",
+    "meaning": "Thứ hai"
+  },
+  {
+    "hanzi": "行李",
+    "pinyin": "xíng li",
+    "meaning": "Hành lý"
+  },
+  {
+    "hanzi": "站台",
+    "pinyin": "zhàn tái",
+    "meaning": "Sân ga"
+  },
+  {
+    "hanzi": "有",
+    "pinyin": "yǒu",
+    "meaning": "Có"
+  },
+  {
+    "hanzi": "同学",
+    "pinyin": "tóng xué",
+    "meaning": "Bạn học"
+  },
+  {
+    "hanzi": "新",
+    "pinyin": "xīn",
+    "meaning": "Mới"
+  },
+  {
+    "hanzi": "个",
+    "pinyin": "gè",
+    "meaning": "Cái"
+  },
+  {
+    "hanzi": "一个新老师",
+    "pinyin": "yí gè xīn lǎo shī",
+    "meaning": "Một giáo viên mới"
+  },
+  {
+    "hanzi": "我叫陈明康",
+    "pinyin": "wǒ jiào chén míng kāng",
+    "meaning": "Tôi tên là Trần Minh Khang"
+  },
+  {
+    "hanzi": "今天",
+    "pinyin": "jīn tiān",
+    "meaning": "Hôm nay"
+  },
+  {
+    "hanzi": "节",
+    "pinyin": "jié",
+    "meaning": "Tiết"
+  },
+  {
+    "hanzi": "一节课",
+    "pinyin": "yī jié kè",
+    "meaning": "Một tiết học"
+  },
+  {
+    "hanzi": "真的吗？",
+    "pinyin": "zhēn de ma ？",
+    "meaning": "Thật vậy không?"
+  },
+  {
+    "hanzi": "历史",
+    "pinyin": "lì shǐ",
+    "meaning": "Lịch sử"
+  },
+  {
+    "hanzi": "都",
+    "pinyin": "dōu",
+    "meaning": "Tất cả"
+  },
+  {
+    "hanzi": "打",
+    "pinyin": "dǎ",
+    "meaning": "Đánh"
+  },
+  {
+    "hanzi": "篮球",
+    "pinyin": "lán qiú",
+    "meaning": "Bóng rổ"
+  },
+  {
+    "hanzi": "打篮球",
+    "pinyin": "dǎ lán qiú",
+    "meaning": "Đánh bóng rổ"
+  },
+  {
+    "hanzi": "排球",
+    "pinyin": "pái qiú",
+    "meaning": "Bóng chuyền"
+  },
+  {
+    "hanzi": "打排球",
+    "pinyin": "dǎ pái qiú",
+    "meaning": "Đánh bóng chuyền"
+  },
+  {
+    "hanzi": "网球",
+    "pinyin": "wǎng qiú",
+    "meaning": "Quần vợt"
+  },
+  {
+    "hanzi": "打网球",
+    "pinyin": "dǎ wǎng qiú",
+    "meaning": "Đánh quần vợt"
+  },
+  {
+    "hanzi": "运动",
+    "pinyin": "yùn dòng",
+    "meaning": "Vận động"
+  },
+  {
+    "hanzi": "跑步",
+    "pinyin": "pǎo bù",
+    "meaning": "Chạy bộ"
+  },
+  {
+    "hanzi": "非常",
+    "pinyin": "fēi cháng",
+    "meaning": "Rất"
+  },
+  {
+    "hanzi": "我非常喜欢跑步",
+    "pinyin": "wǒ fēi cháng xǐ huān pǎo bù",
+    "meaning": "Tôi rất thích chạy bộ"
+  },
+  {
+    "hanzi": "游泳",
+    "pinyin": "yóu yǒng",
+    "meaning": "Bơi lội"
+  },
+  {
+    "hanzi": "还是",
+    "pinyin": "hái shì",
+    "meaning": "Hay là"
+  },
+  {
+    "hanzi": "健身房",
+    "pinyin": "jiàn shēn fáng",
+    "meaning": "Phòng tập thể dục"
+  },
+  {
+    "hanzi": "公园",
+    "pinyin": "gōng yuán",
+    "meaning": "Công viên"
+  },
+  {
+    "hanzi": "比较",
+    "pinyin": "bǐ jiào",
+    "meaning": "Hơn - so sánh"
+  },
+  {
+    "hanzi": "房子",
+    "pinyin": "fáng zi",
+    "meaning": "Ngôi nhà"
+  },
+  {
+    "hanzi": "公寓",
+    "pinyin": "gōng yù",
+    "meaning": "Chung cư"
+  },
+  {
+    "hanzi": "很",
+    "pinyin": "hěn",
+    "meaning": "Rất"
+  },
+  {
+    "hanzi": "房间",
+    "pinyin": "fáng jiān",
+    "meaning": "Phòng"
+  },
+  {
+    "hanzi": "小",
+    "pinyin": "xiǎo",
+    "meaning": "Nhỏ"
+  },
+  {
+    "hanzi": "大",
+    "pinyin": "dà",
+    "meaning": "Lớn"
+  },
+  {
+    "hanzi": "只",
+    "pinyin": "zhī",
+    "meaning": "Chỉ"
+  },
+  {
+    "hanzi": "我的公寓只有三个房间",
+    "pinyin": "wǒ de gōng yù zhǐ yǒu sān gè fáng jiān",
+    "meaning": "Chung cư của tôi chỉ có ba phòng"
+  },
+  {
+    "hanzi": "卧室",
+    "pinyin": "wò shì",
+    "meaning": "Phòng ngủ"
+  },
+  {
+    "hanzi": "厨房",
+    "pinyin": "chú fáng",
+    "meaning": "Bếp"
+  },
+  {
+    "hanzi": "客厅",
+    "pinyin": "kè tīng",
+    "meaning": "Phòng khách"
+  },
+  {
+    "hanzi": "沙发",
+    "pinyin": "shā fā",
+    "meaning": "Ghế sofa"
+  },
+  {
+    "hanzi": "舒服",
+    "pinyin": "shū fú",
+    "meaning": "Thoải mái"
+  },
+  {
+    "hanzi": "床",
+    "pinyin": "chuáng",
+    "meaning": "Giường"
+  },
+  {
+    "hanzi": "电视",
+    "pinyin": "diàn shì",
+    "meaning": "Tivi"
+  },
+  {
+    "hanzi": "漂亮",
+    "pinyin": "piào liàng",
+    "meaning": "Đẹp"
+  },
+  {
+    "hanzi": "桌子",
+    "pinyin": "zhuō zi",
+    "meaning": "Cái bàn"
+  },
+  {
+    "hanzi": "冰箱",
+    "pinyin": "bīng xiāng",
+    "meaning": "Tủ lạnh"
+  },
+  {
+    "hanzi": "乱",
+    "pinyin": "luàn",
+    "meaning": "Lộn xộn"
+  },
+  {
+    "hanzi": "旧",
+    "pinyin": "jiù",
+    "meaning": "Cũ"
+  }
+]

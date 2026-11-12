@@ -1,0 +1,55 @@
+{
+  "title": "Đồ uống",
+  "items": [
+    {
+      "hanzi": "热",
+      "pinyin": "rè",
+      "meaning": "Nóng"
+    },
+    {
+      "hanzi": "水",
+      "pinyin": "shuǐ",
+      "meaning": "Nước"
+    },
+    {
+      "hanzi": "咖啡",
+      "pinyin": "kā fēi",
+      "meaning": "Cà phê"
+    },
+    {
+      "hanzi": "茶",
+      "pinyin": "chá",
+      "meaning": "Trà"
+    },
+    {
+      "hanzi": "这是",
+      "pinyin": "zhè shì",
+      "meaning": "Đây là"
+    },
+    {
+      "hanzi": "和",
+      "pinyin": "hé",
+      "meaning": "Và"
+    },
+    {
+      "hanzi": "米饭",
+      "pinyin": "mǐ fàn",
+      "meaning": "Cơm"
+    },
+    {
+      "hanzi": "粥",
+      "pinyin": "zhōu",
+      "meaning": "Cháo"
+    },
+    {
+      "hanzi": "汤",
+      "pinyin": "tāng",
+      "meaning": "Canh"
+    },
+    {
+      "hanzi": "豆腐",
+      "pinyin": "dòu fu",
+      "meaning": "Đậu phụ"
+    }
+  ]
+}

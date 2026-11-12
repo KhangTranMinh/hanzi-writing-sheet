@@ -1,3 +1,4 @@
+import { bundledData } from './worksheet-data';
 import { pinyin } from 'pinyin-pro';
 
 export type WorksheetMode = 'characters' | 'blank';
@@ -16,31 +17,6 @@ export const parseCharacters = (input: string): string[] => {
     );
   });
   return Array.from(new Set(characters));
-};
-
-const bundledData: Record<string, CharacterData> = {
-  粥: require('../data/粥.json'),
-  茶: require('../data/茶.json'),
-  姜: require('../data/姜.json'),
-  是: require('../data/是.json'),
-  和: require('../data/和.json'),
-  康: require('../data/康.json'),
-  这: require('../data/这.json'),
-  芳: require('../data/芳.json'),
-  越: require('../data/越.json'),
-  黄: require('../data/黄.json'),
-  热: require('../data/热.json'),
-  陈: require('../data/陈.json'),
-  豆: require('../data/豆.json'),
-  米: require('../data/米.json'),
-  饭: require('../data/饭.json'),
-  水: require('../data/水.json'),
-  日: require('../data/日.json'),
-  啡: require('../data/啡.json'),
-  咖: require('../data/咖.json'),
-  东: require('../data/东.json'),
-  腐: require('../data/腐.json'),
-  明: require('../data/明.json'),
 };
 
 const DATA_VERSION = '2.0.1';
