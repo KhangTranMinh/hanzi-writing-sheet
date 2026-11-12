@@ -71,7 +71,7 @@ async function show() {
     } else {
       const catalog = await loadJSON('index.json');
       if (!Array.isArray(catalog) || catalog.some(id => typeof id !== 'string' || !/^\d{4}-\d{4}$/.test(id))) throw new Error('Danh sách bài học không hợp lệ.');
-      const ids = [...new Set(catalog)].sort();
+      const ids = [...new Set(catalog)].sort().reverse();
       const lessonTitles = new Map(await Promise.all(ids.map(async id => {
         try {
           const data = await loadJSON(`../data/lessons/${id}.json`);

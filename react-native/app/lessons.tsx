@@ -7,7 +7,7 @@ import { lessons } from '../lib/lessons-data';
 export default function LessonsScreen() {
   const [part, setPart] = useState<string | null>(null);
   const [selected, setSelected] = useState<string | null>(null);
-  const ids = Object.keys(lessons).sort();
+  const ids = Object.keys(lessons).sort().reverse();
   const parts = [...new Set(ids.map(id => id.slice(0, 4)))];
   const lesson = selected ? lessons[selected] : null;
   return <SafeAreaView style={styles.screen}><ScrollView contentContainerStyle={styles.content}>
