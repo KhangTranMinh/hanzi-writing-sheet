@@ -45,7 +45,7 @@ async function show() {
       description.textContent = 'Chữ Hán, pinyin và nghĩa của bài học.';
       back.href = `?part=${part}`;
       back.textContent = '← Danh sách bài học';
-      const data = await loadJSON(`data/${part}-${lesson}.json`);
+      const data = await loadJSON(`../data/lessons/${part}-${lesson}.json`);
       if (!data || typeof data.title !== 'string' || !data.title.trim()) throw new Error('Dữ liệu bài học không hợp lệ.');
       title.textContent = `Bài ${Number(lesson)} · ${data.title}`;
       description.textContent = `Phần ${Number(part)} · Bài ${Number(lesson)}`;
@@ -69,12 +69,12 @@ async function show() {
       });
       content.append(grid);
     } else {
-      const catalog = await loadJSON('data/index.json');
+      const catalog = await loadJSON('index.json');
       if (!Array.isArray(catalog) || catalog.some(id => typeof id !== 'string' || !/^\d{4}-\d{4}$/.test(id))) throw new Error('Danh sách bài học không hợp lệ.');
       const ids = [...new Set(catalog)].sort();
       const lessonTitles = new Map(await Promise.all(ids.map(async id => {
         try {
-          const data = await loadJSON(`data/${id}.json`);
+          const data = await loadJSON(`../data/lessons/${id}.json`);
           return [id, typeof data?.title === 'string' && data.title.trim() ? data.title : 'Chưa có tên'];
         } catch {
           return [id, 'Chưa có tên'];

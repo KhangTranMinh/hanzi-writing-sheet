@@ -1,6 +1,6 @@
 # Web version
 
-This static browser app has its own `worksheet/data/` stroke cache. It does not read files from `local/`.
+This static browser app uses the generated `data/` copy of `shared/data/`. It does not read files from `local/`.
 
 Hosted version: <https://khangtranminh.github.io/hanzi-writing-sheet/>. GitHub Actions deploys `web/` whenever a commit is pushed to `main`.
 
@@ -14,7 +14,7 @@ python3 scripts/web/run_web_local.py
 
 Open <http://localhost:8000/> and choose **Tạo trang luyện viết** or **Luyện tập**. The worksheet opens in a new tab; choose **In / lưu PDF** and then **Save as PDF** in the browser print dialog.
 
-The worksheet reads cached stroke data from `worksheet/data/` first and fetches missing characters from Hanzi Writer Data. The bundled `pinyin-pro` library provides pinyin locally.
+The worksheet reads cached stroke data from `data/worksheet/` first and fetches missing characters from Hanzi Writer Data. The bundled `pinyin-pro` library provides pinyin locally.
 
 ## Practice cards
 
@@ -42,7 +42,7 @@ const ADVANCE_MODE = "manual";
 
 To change the automatic delay, edit `AUTO_ADVANCE_DELAY` in the same file; its value is in milliseconds (`1500` means 1.5 seconds). Reload the page after editing.
 
-When updating the version, also change the `v` query value on the practice link and stylesheet in `index.html`, and the stylesheet and script references in `practice/index.html`, to match. This gives browsers new URLs for updated files. The practice data is revalidated when it is loaded.
+When updating the version, also change the `v` query value on the practice link and stylesheet in `index.html`, the stylesheet and script references in `practice/index.html`, and the script reference in `worksheet/index.html`, to match. This gives browsers new URLs for updated files. The practice data is revalidated when it is loaded.
 
 ### Updating practice data
 
@@ -81,4 +81,4 @@ Shared data is synced automatically when starting the web server and in GitHub A
 python3 scripts/shared_data/publish_shared_data.py
 ```
 
-The catalog is generated because the static site cannot list files in a directory. `0000-0000.json` is a template and is excluded from the catalog. `0001-0001.json` is an example lesson that you can edit or replace. Serve the site over HTTP to load the catalog and lessons.
+The catalog `lessons/index.json` is generated outside `data/` because the static site cannot list files in a directory. `0000-0000.json` is a template and is excluded from the catalog. `0001-0001.json` is an example lesson that you can edit or replace. Serve the site over HTTP to load the catalog and lessons.

@@ -125,7 +125,7 @@ html, body { width: 210mm; height: 297mm; margin: 0; padding: 0; background: whi
   }
 
   async function fetchCharacterData(character) {
-    const localUrl = new URL(`data/${encodeURIComponent(character)}.json`, window.location.href);
+    const localUrl = new URL(`../data/worksheet/${encodeURIComponent(character)}.json`, window.location.href);
     try {
       const localResponse = await fetch(localUrl);
       if (localResponse.ok) return await localResponse.json();

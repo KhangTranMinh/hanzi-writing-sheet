@@ -24,4 +24,4 @@ See [react-native/README.md](react-native/README.md). This Expo project is a mob
 
 ## Shared data
 
-Edit lessons, practice cards and worksheet stroke data under `shared/data/`. The web server command, GitHub Pages workflow and React Native npm start/android/ios/web commands sync it automatically. Run `python3 scripts/shared_data/publish_shared_data.py` before other builds or after editing data while a server is running. The generated web and React Native files are build inputs, not the source of truth. See the app READMEs for details.
+Edit lessons, practice cards and worksheet stroke data under `shared/data/`. The web server command, GitHub Pages workflow and React Native npm start/android/ios/web commands sync it automatically. Run `python3 scripts/shared_data/publish_shared_data.py` before other builds or after editing data while a server is running. Each sync replaces `web/data/` and `react-native/data/` with complete copies of `shared/data/`; generated files are build inputs, not the source of truth. See the app READMEs for details.
