@@ -4,6 +4,7 @@ export type Lesson = { title: string; items: LessonItem[] };
 export const lessons: Record<string, Lesson> = {
   "0000-0001": require("../data/lessons/0000-0001.json"),
   "0000-0002": require("../data/lessons/0000-0002.json"),
+  "0000-0003": require("../data/lessons/0000-0003.json"),
   "0001-0001": require("../data/lessons/0001-0001.json"),
   "0001-0002": require("../data/lessons/0001-0002.json"),
   "0001-0003": require("../data/lessons/0001-0003.json"),

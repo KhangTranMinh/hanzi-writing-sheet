@@ -2,6 +2,11 @@
   "title": "Số đếm",
   "items": [
     {
+      "hanzi": "零",
+      "pinyin": "líng",
+      "meaning": "Không"
+    },
+    {
       "hanzi": "一",
       "pinyin": "yī",
       "meaning": "Một"
