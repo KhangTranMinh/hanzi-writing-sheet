@@ -19,3 +19,7 @@ local/.venv/
 
 # Private local files
 /private/
+
+# Track project skills despite global ignore rules.
+!/.claude/
+!/.agents/

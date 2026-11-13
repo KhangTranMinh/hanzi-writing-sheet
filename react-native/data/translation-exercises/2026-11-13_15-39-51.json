@@ -1,0 +1,55 @@
+{
+  "created_at": "13/11/2026 15:39:51 (Asia/Ho_Chi_Minh)",
+  "exercises": [
+    {
+      "question": "Tôi là người Việt Nam.",
+      "hanzi": "我是越南人。",
+      "pinyin": "wǒ shì yuè nán rén."
+    },
+    {
+      "question": "Cô ấy thích âm nhạc.",
+      "hanzi": "她喜欢音乐。",
+      "pinyin": "tā xǐ huān yīn yuè."
+    },
+    {
+      "question": "Tôi thường xuyên đi siêu thị.",
+      "hanzi": "我常常去超市。",
+      "pinyin": "wǒ cháng cháng qù chāo shì."
+    },
+    {
+      "question": "Đây là trà xanh.",
+      "hanzi": "这是绿茶。",
+      "pinyin": "zhè shì lǜ chá."
+    },
+    {
+      "question": "Điện thoại của tôi ở đây.",
+      "hanzi": "我的手机在这里。",
+      "pinyin": "wǒ de shǒu jī zài zhè lǐ."
+    },
+    {
+      "question": "Phòng của tôi rất nhỏ.",
+      "hanzi": "我的房间很小。",
+      "pinyin": "wǒ de fáng jiān hěn xiǎo."
+    },
+    {
+      "question": "Tôi muốn hai cốc cà phê.",
+      "hanzi": "我要两杯咖啡。",
+      "pinyin": "wǒ yào liǎng bēi kā fēi."
+    },
+    {
+      "question": "Cô ấy thích bơi lội.",
+      "hanzi": "她喜欢游泳。",
+      "pinyin": "tā xǐ huān yóu yǒng."
+    },
+    {
+      "question": "Mùa đông ở Bắc Kinh rất lạnh.",
+      "hanzi": "北京冬天很冷。",
+      "pinyin": "běi jīng dōng tiān hěn lěng."
+    },
+    {
+      "question": "Lẩu rất ngon.",
+      "hanzi": "火锅很好吃。",
+      "pinyin": "huǒ guō hěn hǎo chī."
+    }
+  ]
+}
