@@ -1,25 +1,60 @@
 {
-  "title": "Họ và tên",
+  "title": "Nói về quốc tịch",
   "items": [
     {
-      "hanzi": "陈明康",
-      "pinyin": "chen míng kāng",
-      "meaning": "Trần Minh Khang"
+      "hanzi": "我",
+      "pinyin": "wǒ",
+      "meaning": "Tôi"
     },
     {
-      "hanzi": "黄越芳",
-      "pinyin": "huáng yuè fāng",
-      "meaning": "Hoàng Việt Phương"
+      "hanzi": "你",
+      "pinyin": "nǐ",
+      "meaning": "Anh/em"
     },
     {
-      "hanzi": "陈日东",
-      "pinyin": "chen rì dōng",
-      "meaning": "Trần Nhật Đông"
+      "hanzi": "是",
+      "pinyin": "shì",
+      "meaning": "Là"
     },
     {
-      "hanzi": "陈日姜",
-      "pinyin": "chen rì jiāng",
-      "meaning": "Trần Nhật Khương"
+      "hanzi": "中国",
+      "pinyin": "zhōng guó",
+      "meaning": "Trung Quốc"
+    },
+    {
+      "hanzi": "韩国",
+      "pinyin": "hán guó",
+      "meaning": "Hàn Quốc"
+    },
+    {
+      "hanzi": "日本",
+      "pinyin": "rì běn",
+      "meaning": "Nhật Bản"
+    },
+    {
+      "hanzi": "美国",
+      "pinyin": "měi guó",
+      "meaning": "Mỹ Quốc"
+    },
+    {
+      "hanzi": "越南",
+      "pinyin": "yuè nán",
+      "meaning": "Việt Nam"
+    },
+    {
+      "hanzi": "人",
+      "pinyin": "rén",
+      "meaning": "Người"
+    },
+    {
+      "hanzi": "你呢",
+      "pinyin": "nǐ ne",
+      "meaning": "Còn bạn?"
+    },
+    {
+      "hanzi": "嗨",
+      "pinyin": "hāi",
+      "meaning": "Chào"
     }
   ]
 }

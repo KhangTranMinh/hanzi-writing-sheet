@@ -1,65 +1,75 @@
 {
-  "title": "Nơi chốn, thói quen",
+  "title": "Tìm đồ dùng cần thiết khi đi du lịch",
   "items": [
     {
-      "hanzi": "去",
-      "pinyin": "qù",
-      "meaning": "Đi"
+      "hanzi": "手机",
+      "pinyin": "shǒu jī",
+      "meaning": "Điện thoại di động"
     },
     {
-      "hanzi": "零食",
-      "pinyin": "líng shí",
-      "meaning": "Đồ ăn vặt"
+      "hanzi": "钱包",
+      "pinyin": "qián bāo",
+      "meaning": "Ví"
     },
     {
-      "hanzi": "常常",
-      "pinyin": "cháng cháng",
-      "meaning": "Thường xuyên"
+      "hanzi": "在",
+      "pinyin": "zài",
+      "meaning": "Ở"
     },
     {
-      "hanzi": "不常",
-      "pinyin": "bù cháng",
-      "meaning": "Hiếm khi"
+      "hanzi": "这里",
+      "pinyin": "zhè lǐ",
+      "meaning": "Ở đây"
     },
     {
-      "hanzi": "吃",
-      "pinyin": "chī",
-      "meaning": "Ăn"
+      "hanzi": "哪里",
+      "pinyin": "nǎ lǐ",
+      "meaning": "Ở đâu"
     },
     {
-      "hanzi": "菜",
-      "pinyin": "cài",
-      "meaning": "Món ăn"
+      "hanzi": "洗手间",
+      "pinyin": "xǐ shǒu jiān",
+      "meaning": "Nhà vệ sinh"
     },
     {
-      "hanzi": "书",
-      "pinyin": "shū",
-      "meaning": "Sách"
+      "hanzi": "火车站",
+      "pinyin": "huǒ chē zhàn",
+      "meaning": "Ga tàu hỏa"
     },
     {
-      "hanzi": "看",
-      "pinyin": "kàn",
-      "meaning": "Nhìn"
+      "hanzi": "火车",
+      "pinyin": "huǒ chē",
+      "meaning": "Tàu hỏa"
     },
     {
-      "hanzi": "书店",
-      "pinyin": "shū diàn",
-      "meaning": "Hiệu sách"
+      "hanzi": "车票",
+      "pinyin": "chē piào",
+      "meaning": "Vé tàu"
     },
     {
-      "hanzi": "超市",
-      "pinyin": "chāo shì",
-      "meaning": "Siêu thị"
+      "hanzi": "第",
+      "pinyin": "dì",
+      "meaning": "Thứ (chỉ thứ tự)"
     },
     {
-      "hanzi": "韩文",
-      "pinyin": "hán wén",
-      "meaning": "Tiếng Hàn"
+      "hanzi": "第一",
+      "pinyin": "dì yī",
+      "meaning": "Thứ nhất"
     },
     {
-      "hanzi": "买",
-      "pinyin": "mǎi",
-      "meaning": "Mua"
+      "hanzi": "第二",
+      "pinyin": "dì èr",
+      "meaning": "Thứ hai"
+    },
+    {
+      "hanzi": "行李",
+      "pinyin": "xíng lǐ",
+      "meaning": "Hành lý"
+    },
+    {
+      "hanzi": "站台",
+      "pinyin": "zhàn tái",
+      "meaning": "Sân ga"
     }
   ]
 }

@@ -52,7 +52,7 @@
   {
     "hanzi": "见面吗？",
     "pinyin": "jiàn miàn ma ？",
-    "meaning": "Gặp mặt à?"
+    "meaning": "Gặp mặt không?"
   },
   {
     "hanzi": "明天见",
@@ -392,7 +392,7 @@
   {
     "hanzi": "菜",
     "pinyin": "cài",
-    "meaning": "Rau"
+    "meaning": "Món ăn"
   },
   {
     "hanzi": "书",
@@ -487,12 +487,12 @@
   {
     "hanzi": "钱包",
     "pinyin": "qián bāo",
-    "meaning": "Túi tiền"
+    "meaning": "Ví"
   },
   {
     "hanzi": "在",
     "pinyin": "zài",
-    "meaning": "Tại"
+    "meaning": "Ở"
   },
   {
     "hanzi": "这里",
@@ -587,7 +587,7 @@
   {
     "hanzi": "节",
     "pinyin": "jié",
-    "meaning": "Tiết"
+    "meaning": "Tiết học"
   },
   {
     "hanzi": "一节课",
@@ -607,7 +607,7 @@
   {
     "hanzi": "都",
     "pinyin": "dōu",
-    "meaning": "Tất cả"
+    "meaning": "Đều"
   },
   {
     "hanzi": "打",
@@ -788,5 +788,125 @@
     "hanzi": "旧",
     "pinyin": "jiù",
     "meaning": "Cũ"
+  },
+  {
+    "hanzi": "冬天",
+    "pinyin": "dōng tiān",
+    "meaning": "Mùa đông"
+  },
+  {
+    "hanzi": "冷",
+    "pinyin": "lěng",
+    "meaning": "Lạnh"
+  },
+  {
+    "hanzi": "北京",
+    "pinyin": "běi jīng",
+    "meaning": "Bắc Kinh"
+  },
+  {
+    "hanzi": "的时候",
+    "pinyin": "de shí hòu",
+    "meaning": "Khi"
+  },
+  {
+    "hanzi": "夏天",
+    "pinyin": "xià tiān",
+    "meaning": "Mùa hè"
+  },
+  {
+    "hanzi": "热",
+    "pinyin": "rè",
+    "meaning": "Nóng"
+  },
+  {
+    "hanzi": "特别",
+    "pinyin": "tè bié",
+    "meaning": "Đặc biệt"
+  },
+  {
+    "hanzi": "热闹",
+    "pinyin": "rè nào",
+    "meaning": "Nhộn nhịp"
+  },
+  {
+    "hanzi": "好玩儿",
+    "pinyin": "hǎo wán er",
+    "meaning": "Vui vẻ"
+  },
+  {
+    "hanzi": "秋天",
+    "pinyin": "qiū tiān",
+    "meaning": "Mùa thu"
+  },
+  {
+    "hanzi": "长城",
+    "pinyin": "cháng chéng",
+    "meaning": "Vạn Lý Trường Thành"
+  },
+  {
+    "hanzi": "故宫",
+    "pinyin": "gù gōng",
+    "meaning": "Cố Cung"
+  },
+  {
+    "hanzi": "有名",
+    "pinyin": "yǒu míng",
+    "meaning": "Nổi tiếng"
+  },
+  {
+    "hanzi": "人们",
+    "pinyin": "rén men",
+    "meaning": "Mọi người"
+  },
+  {
+    "hanzi": "动物园",
+    "pinyin": "dòng wù yuán",
+    "meaning": "Sở thú"
+  },
+  {
+    "hanzi": "春天",
+    "pinyin": "chūn tiān",
+    "meaning": "Mùa xuân"
+  },
+  {
+    "hanzi": "门票",
+    "pinyin": "mén piào",
+    "meaning": "Vé vào cửa"
+  },
+  {
+    "hanzi": "远",
+    "pinyin": "yuǎn",
+    "meaning": "Xa"
+  },
+  {
+    "hanzi": "贵",
+    "pinyin": "guì",
+    "meaning": "Đắt"
+  },
+  {
+    "hanzi": "烤鸭",
+    "pinyin": "kǎo yā",
+    "meaning": "Vịt quay"
+  },
+  {
+    "hanzi": "火锅",
+    "pinyin": "huǒ guō",
+    "meaning": "Lẩu"
+  },
+  {
+    "hanzi": "好吃",
+    "pinyin": "hǎo chī",
+    "meaning": "Ngon"
+  },
+  {
+    "hanzi": "辣",
+    "pinyin": "là",
+    "meaning": "Cay"
+  },
+  {
+    "hanzi": "老家",
+    "pinyin": "lǎo jiā",
+    "meaning": "Quê hương"
   }
 ]

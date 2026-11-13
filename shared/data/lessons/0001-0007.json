@@ -1,65 +1,60 @@
 {
-  "title": "Cha mẹ và con",
+  "title": "Gọi đồ uống",
   "items": [
     {
-      "hanzi": "的",
-      "pinyin": "de",
-      "meaning": "Của"
+      "hanzi": "杯",
+      "pinyin": "bēi",
+      "meaning": "Cốc"
     },
     {
-      "hanzi": "爸爸",
-      "pinyin": "bà ba",
-      "meaning": "Cha"
+      "hanzi": "要",
+      "pinyin": "yào",
+      "meaning": "Muốn"
     },
     {
-      "hanzi": "妈妈",
-      "pinyin": "mā ma",
-      "meaning": "Mẹ"
+      "hanzi": "奶",
+      "pinyin": "nǎi",
+      "meaning": "Sữa"
     },
     {
-      "hanzi": "儿子",
-      "pinyin": "ér zi",
-      "meaning": "Con trai"
+      "hanzi": "牛奶",
+      "pinyin": "niú nǎi",
+      "meaning": "Sữa bò"
     },
     {
-      "hanzi": "女儿",
-      "pinyin": "nǚ ér",
-      "meaning": "Con gái"
+      "hanzi": "两",
+      "pinyin": "liǎng",
+      "meaning": "Hai"
     },
     {
-      "hanzi": "老公",
-      "pinyin": "lǎo gōng",
-      "meaning": "Chồng"
+      "hanzi": "冰",
+      "pinyin": "bīng",
+      "meaning": "Đá"
     },
     {
-      "hanzi": "老婆",
-      "pinyin": "lǎo pó",
-      "meaning": "Vợ"
+      "hanzi": "糖",
+      "pinyin": "táng",
+      "meaning": "Đường"
     },
     {
-      "hanzi": "英国",
-      "pinyin": "Yīng guó",
-      "meaning": "Anh Quốc"
+      "hanzi": "不客气",
+      "pinyin": "bù kè qì",
+      "meaning": "Không có gì"
     },
     {
-      "hanzi": "加拿大",
-      "pinyin": "Jiā ná dà",
-      "meaning": "Canada"
+      "hanzi": "绿",
+      "pinyin": "lǜ",
+      "meaning": "Màu xanh lá"
     },
     {
-      "hanzi": "吗？",
-      "pinyin": "ma?",
-      "meaning": "Không?"
+      "hanzi": "绿茶",
+      "pinyin": "lǜ chá",
+      "meaning": "Trà xanh"
     },
     {
-      "hanzi": "也",
-      "pinyin": "yě",
-      "meaning": "Cũng"
-    },
-    {
-      "hanzi": "中学生",
-      "pinyin": "zhōng xué shēng",
-      "meaning": "Học sinh trung học"
+      "hanzi": "谢谢",
+      "pinyin": "xiè xie",
+      "meaning": "Cảm ơn"
     }
   ]
 }

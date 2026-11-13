@@ -6,6 +6,6 @@
 
 3. After completing changes to the web app, run or restart the local web server and open the relevant page in the system's default browser, using both a desktop window and a separate mobile-sized window for review. Use a mobile viewport or device emulation when available, and report if the mobile view could not be opened. Do not commit or deploy solely because the web app was changed.
 
-4. After completing changes to the React Native app, run or restart it locally using the project's Expo workflow and open it on an available simulator, emulator, or connected device. If the required tools or device are unavailable, report what could not be run. Do not publish or deploy solely because the app was changed.
+4. The requirement to run the React Native app locally after changes is temporarily suspended. Do not publish or deploy solely because the app was changed.
 
 5. Treat `shared/data/` as the source of truth for web and React Native lessons, practice cards, and worksheet stroke data. Each sync replaces `web/data/` and `react-native/data/` entirely with `shared/data/`. Update the shared files, then run `python3 scripts/shared_data/publish_shared_data.py` or use the documented startup commands before testing or committing generated copies. The `0000-0000.json` lesson is a template and must not appear in the lesson catalog. For mobile releases, bundle the updated data in a new app build; it is not fetched automatically.

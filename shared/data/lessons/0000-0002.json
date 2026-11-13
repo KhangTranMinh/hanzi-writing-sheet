@@ -1,0 +1,25 @@
+{
+  "title": "Họ và tên",
+  "items": [
+    {
+      "hanzi": "陈明康",
+      "pinyin": "chen míng kāng",
+      "meaning": "Trần Minh Khang"
+    },
+    {
+      "hanzi": "黄越芳",
+      "pinyin": "huáng yuè fāng",
+      "meaning": "Hoàng Việt Phương"
+    },
+    {
+      "hanzi": "陈日东",
+      "pinyin": "chen rì dōng",
+      "meaning": "Trần Nhật Đông"
+    },
+    {
+      "hanzi": "陈日姜",
+      "pinyin": "chen rì jiāng",
+      "meaning": "Trần Nhật Khương"
+    }
+  ]
+}

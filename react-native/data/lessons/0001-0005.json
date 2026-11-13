@@ -1,50 +1,65 @@
 {
-  "title": "Nghề nghiệp",
+  "title": "Dùng đại từ sở hữu",
   "items": [
     {
-      "hanzi": "老师",
-      "pinyin": "lǎo shī",
-      "meaning": "Giáo viên"
+      "hanzi": "的",
+      "pinyin": "de",
+      "meaning": "Của"
     },
     {
-      "hanzi": "学生",
-      "pinyin": "xué sheng",
-      "meaning": "Học sinh"
+      "hanzi": "爸爸",
+      "pinyin": "bà ba",
+      "meaning": "Cha"
     },
     {
-      "hanzi": "律师",
-      "pinyin": "lǜ shī",
-      "meaning": "Luật sư"
+      "hanzi": "妈妈",
+      "pinyin": "mā ma",
+      "meaning": "Mẹ"
     },
     {
-      "hanzi": "医生",
-      "pinyin": "yī shēng",
-      "meaning": "Bác sĩ"
+      "hanzi": "儿子",
+      "pinyin": "ér zi",
+      "meaning": "Con trai"
     },
     {
-      "hanzi": "中文",
-      "pinyin": "zhōng wén",
-      "meaning": "Tiếng Trung"
+      "hanzi": "女儿",
+      "pinyin": "nǚ ér",
+      "meaning": "Con gái"
     },
     {
-      "hanzi": "英文",
-      "pinyin": "yīng wén",
-      "meaning": "Tiếng Anh"
+      "hanzi": "老公",
+      "pinyin": "lǎo gōng",
+      "meaning": "Chồng"
     },
     {
-      "hanzi": "对",
-      "pinyin": "duì",
-      "meaning": "Đúng"
+      "hanzi": "老婆",
+      "pinyin": "lǎo pó",
+      "meaning": "Vợ"
     },
     {
-      "hanzi": "对不对",
-      "pinyin": "duì bù duì",
-      "meaning": "Đúng hay không?"
+      "hanzi": "英国",
+      "pinyin": "Yīng guó",
+      "meaning": "Anh Quốc"
     },
     {
-      "hanzi": "说",
-      "pinyin": "shuō",
-      "meaning": "Nói"
+      "hanzi": "加拿大",
+      "pinyin": "Jiā ná dà",
+      "meaning": "Canada"
+    },
+    {
+      "hanzi": "吗？",
+      "pinyin": "ma?",
+      "meaning": "Không?"
+    },
+    {
+      "hanzi": "也",
+      "pinyin": "yě",
+      "meaning": "Cũng"
+    },
+    {
+      "hanzi": "中学生",
+      "pinyin": "zhōng xué shēng",
+      "meaning": "Học sinh trung học"
     }
   ]
 }

@@ -2,6 +2,8 @@
 export type LessonItem = { hanzi: string; pinyin: string; meaning: string };
 export type Lesson = { title: string; items: LessonItem[] };
 export const lessons: Record<string, Lesson> = {
+  "0000-0001": require("../data/lessons/0000-0001.json"),
+  "0000-0002": require("../data/lessons/0000-0002.json"),
   "0001-0001": require("../data/lessons/0001-0001.json"),
   "0001-0002": require("../data/lessons/0001-0002.json"),
   "0001-0003": require("../data/lessons/0001-0003.json"),
@@ -12,8 +14,6 @@ export const lessons: Record<string, Lesson> = {
   "0001-0008": require("../data/lessons/0001-0008.json"),
   "0001-0009": require("../data/lessons/0001-0009.json"),
   "0001-0010": require("../data/lessons/0001-0010.json"),
-  "0001-0011": require("../data/lessons/0001-0011.json"),
-  "0001-0012": require("../data/lessons/0001-0012.json"),
   "0002-0001": require("../data/lessons/0002-0001.json"),
   "0002-0002": require("../data/lessons/0002-0002.json"),
 };

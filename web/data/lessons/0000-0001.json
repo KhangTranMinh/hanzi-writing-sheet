@@ -1,0 +1,55 @@
+{
+  "title": "Số đếm",
+  "items": [
+    {
+      "hanzi": "一",
+      "pinyin": "yī",
+      "meaning": "một"
+    },
+    {
+      "hanzi": "二",
+      "pinyin": "èr",
+      "meaning": "hai"
+    },
+    {
+      "hanzi": "三",
+      "pinyin": "sān",
+      "meaning": "ba"
+    },
+    {
+      "hanzi": "四",
+      "pinyin": "sì",
+      "meaning": "bốn"
+    },
+    {
+      "hanzi": "五",
+      "pinyin": "wǔ",
+      "meaning": "năm"
+    },
+    {
+      "hanzi": "六",
+      "pinyin": "liù",
+      "meaning": "sáu"
+    },
+    {
+      "hanzi": "七",
+      "pinyin": "qī",
+      "meaning": "bảy"
+    },
+    {
+      "hanzi": "八",
+      "pinyin": "bā",
+      "meaning": "tám"
+    },
+    {
+      "hanzi": "九",
+      "pinyin": "jiǔ",
+      "meaning": "chín"
+    },
+    {
+      "hanzi": "十",
+      "pinyin": "shí",
+      "meaning": "mười"
+    }
+  ]
+}

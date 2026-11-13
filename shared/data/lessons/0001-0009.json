@@ -1,60 +1,65 @@
 {
-  "title": "Gọi món ăn, đồ uống",
+  "title": "Giới thiệu bản thân và lớp học",
   "items": [
     {
-      "hanzi": "杯",
-      "pinyin": "bēi",
-      "meaning": "Cốc"
+      "hanzi": "有",
+      "pinyin": "yǒu",
+      "meaning": "Có"
     },
     {
-      "hanzi": "要",
-      "pinyin": "yào",
-      "meaning": "Phải"
+      "hanzi": "同学",
+      "pinyin": "tóng xué",
+      "meaning": "Bạn học"
     },
     {
-      "hanzi": "奶",
-      "pinyin": "nǎi",
-      "meaning": "Sữa"
+      "hanzi": "新",
+      "pinyin": "xīn",
+      "meaning": "Mới"
     },
     {
-      "hanzi": "牛奶",
-      "pinyin": "niú nǎi",
-      "meaning": "Sữa bò"
+      "hanzi": "个",
+      "pinyin": "gè",
+      "meaning": "Cái"
     },
     {
-      "hanzi": "两",
-      "pinyin": "liǎng",
-      "meaning": "Hai"
+      "hanzi": "一个新老师",
+      "pinyin": "yī gè xīn lǎo shī",
+      "meaning": "Một giáo viên mới"
     },
     {
-      "hanzi": "冰",
-      "pinyin": "bīng",
-      "meaning": "Băng"
+      "hanzi": "我叫陈明康",
+      "pinyin": "wǒ jiào Chén Míng kāng",
+      "meaning": "Tôi tên là Trần Minh Khang"
     },
     {
-      "hanzi": "糖",
-      "pinyin": "táng",
-      "meaning": "Đường"
+      "hanzi": "今天",
+      "pinyin": "jīn tiān",
+      "meaning": "Hôm nay"
     },
     {
-      "hanzi": "不客气",
-      "pinyin": "bù kè qì",
-      "meaning": "Không có gì"
+      "hanzi": "节",
+      "pinyin": "jié",
+      "meaning": "Tiết học"
     },
     {
-      "hanzi": "绿",
-      "pinyin": "lǜ",
-      "meaning": "Màu xanh lá"
+      "hanzi": "一节课",
+      "pinyin": "yī jié kè",
+      "meaning": "Một tiết học"
     },
     {
-      "hanzi": "绿茶",
-      "pinyin": "lǜ chá",
-      "meaning": "Trà xanh"
+      "hanzi": "真的吗？",
+      "pinyin": "zhēn de ma?",
+      "meaning": "Thật không?"
     },
     {
-      "hanzi": "谢谢",
-      "pinyin": "xiè xie",
-      "meaning": "Cảm ơn"
+      "hanzi": "历史",
+      "pinyin": "lì shǐ",
+      "meaning": "Lịch sử"
+    },
+    {
+      "hanzi": "都",
+      "pinyin": "dōu",
+      "meaning": "Đều"
     }
   ]
 }

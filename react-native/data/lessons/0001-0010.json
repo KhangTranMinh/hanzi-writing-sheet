@@ -1,75 +1,85 @@
 {
-  "title": "Đi lại, phương tiện",
+  "title": "Bàn về sở thích thể thao",
   "items": [
     {
-      "hanzi": "手机",
-      "pinyin": "shǒu jī",
-      "meaning": "Điện thoại di động"
+      "hanzi": "打",
+      "pinyin": "dǎ",
+      "meaning": "Đánh"
     },
     {
-      "hanzi": "钱包",
-      "pinyin": "qián bāo",
-      "meaning": "Ví"
+      "hanzi": "篮球",
+      "pinyin": "lán qiú",
+      "meaning": "Bóng rổ"
     },
     {
-      "hanzi": "在",
-      "pinyin": "zài",
-      "meaning": "Ở"
+      "hanzi": "打篮球",
+      "pinyin": "dǎ lán qiú",
+      "meaning": "Chơi bóng rổ"
     },
     {
-      "hanzi": "这里",
-      "pinyin": "zhè lǐ",
-      "meaning": "Ở đây"
+      "hanzi": "排球",
+      "pinyin": "pái qiú",
+      "meaning": "Bóng chuyền"
     },
     {
-      "hanzi": "哪里",
-      "pinyin": "nǎ lǐ",
-      "meaning": "Ở đâu"
+      "hanzi": "打排球",
+      "pinyin": "dǎ pái qiú",
+      "meaning": "Chơi bóng chuyền"
     },
     {
-      "hanzi": "洗手间",
-      "pinyin": "xǐ shǒu jiān",
-      "meaning": "Nhà vệ sinh"
+      "hanzi": "网球",
+      "pinyin": "wǎng qiú",
+      "meaning": "Quần vợt"
     },
     {
-      "hanzi": "火车站",
-      "pinyin": "huǒ chē zhàn",
-      "meaning": "Ga tàu hỏa"
+      "hanzi": "打网球",
+      "pinyin": "dǎ wǎng qiú",
+      "meaning": "Chơi quần vợt"
     },
     {
-      "hanzi": "火车",
-      "pinyin": "huǒ chē",
-      "meaning": "Tàu hỏa"
+      "hanzi": "运动",
+      "pinyin": "yùn dòng",
+      "meaning": "Thể thao"
     },
     {
-      "hanzi": "车票",
-      "pinyin": "chē piào",
-      "meaning": "Vé tàu"
+      "hanzi": "跑步",
+      "pinyin": "pǎo bù",
+      "meaning": "Chạy bộ"
     },
     {
-      "hanzi": "第",
-      "pinyin": "dì",
-      "meaning": "Thứ (chỉ thứ tự)"
+      "hanzi": "非常",
+      "pinyin": "fēi cháng",
+      "meaning": "Rất"
     },
     {
-      "hanzi": "第一",
-      "pinyin": "dì yī",
-      "meaning": "Thứ nhất"
+      "hanzi": "我非常喜欢跑步",
+      "pinyin": "wǒ fēi cháng xǐ huān pǎo bù",
+      "meaning": "Tôi rất thích chạy bộ"
     },
     {
-      "hanzi": "第二",
-      "pinyin": "dì èr",
-      "meaning": "Thứ hai"
+      "hanzi": "游泳",
+      "pinyin": "yóu yǒng",
+      "meaning": "Bơi lội"
     },
     {
-      "hanzi": "行李",
-      "pinyin": "xíng lǐ",
-      "meaning": "Hành lý"
+      "hanzi": "还是",
+      "pinyin": "hái shì",
+      "meaning": "Hay là"
     },
     {
-      "hanzi": "站台",
-      "pinyin": "zhàn tái",
-      "meaning": "Sân ga"
+      "hanzi": "健身房",
+      "pinyin": "jiàn shēn fáng",
+      "meaning": "Phòng tập gym"
+    },
+    {
+      "hanzi": "公园",
+      "pinyin": "gōng yuán",
+      "meaning": "Công viên"
+    },
+    {
+      "hanzi": "比较",
+      "pinyin": "bǐ jiào",
+      "meaning": "So sánh hơn"
     }
   ]
 }

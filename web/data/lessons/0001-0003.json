@@ -1,55 +1,50 @@
 {
-  "title": "Đồ uống",
+  "title": "Hỏi về nghề nghiệp",
   "items": [
     {
-      "hanzi": "热",
-      "pinyin": "rè",
-      "meaning": "Nóng"
+      "hanzi": "老师",
+      "pinyin": "lǎo shī",
+      "meaning": "Giáo viên"
     },
     {
-      "hanzi": "水",
-      "pinyin": "shuǐ",
-      "meaning": "Nước"
+      "hanzi": "学生",
+      "pinyin": "xué sheng",
+      "meaning": "Học sinh"
     },
     {
-      "hanzi": "咖啡",
-      "pinyin": "kā fēi",
-      "meaning": "Cà phê"
+      "hanzi": "律师",
+      "pinyin": "lǜ shī",
+      "meaning": "Luật sư"
     },
     {
-      "hanzi": "茶",
-      "pinyin": "chá",
-      "meaning": "Trà"
+      "hanzi": "医生",
+      "pinyin": "yī shēng",
+      "meaning": "Bác sĩ"
     },
     {
-      "hanzi": "这是",
-      "pinyin": "zhè shì",
-      "meaning": "Đây là"
+      "hanzi": "中文",
+      "pinyin": "zhōng wén",
+      "meaning": "Tiếng Trung"
     },
     {
-      "hanzi": "和",
-      "pinyin": "hé",
-      "meaning": "Và"
+      "hanzi": "英文",
+      "pinyin": "yīng wén",
+      "meaning": "Tiếng Anh"
     },
     {
-      "hanzi": "米饭",
-      "pinyin": "mǐ fàn",
-      "meaning": "Cơm"
+      "hanzi": "对",
+      "pinyin": "duì",
+      "meaning": "Đúng"
     },
     {
-      "hanzi": "粥",
-      "pinyin": "zhōu",
-      "meaning": "Cháo"
+      "hanzi": "对不对",
+      "pinyin": "duì bù duì",
+      "meaning": "Đúng hay không?"
     },
     {
-      "hanzi": "汤",
-      "pinyin": "tāng",
-      "meaning": "Canh"
-    },
-    {
-      "hanzi": "豆腐",
-      "pinyin": "dòu fu",
-      "meaning": "Đậu phụ"
+      "hanzi": "说",
+      "pinyin": "shuō",
+      "meaning": "Nói"
     }
   ]
 }
