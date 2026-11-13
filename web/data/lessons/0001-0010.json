@@ -14,7 +14,7 @@
     {
       "hanzi": "打篮球",
       "pinyin": "dǎ lán qiú",
-      "meaning": "Chơi bóng rổ"
+      "meaning": "Đánh bóng rổ"
     },
     {
       "hanzi": "排球",
@@ -24,7 +24,7 @@
     {
       "hanzi": "打排球",
       "pinyin": "dǎ pái qiú",
-      "meaning": "Chơi bóng chuyền"
+      "meaning": "Đánh bóng chuyền"
     },
     {
       "hanzi": "网球",
@@ -34,12 +34,12 @@
     {
       "hanzi": "打网球",
       "pinyin": "dǎ wǎng qiú",
-      "meaning": "Chơi quần vợt"
+      "meaning": "Đánh quần vợt"
     },
     {
       "hanzi": "运动",
       "pinyin": "yùn dòng",
-      "meaning": "Thể thao"
+      "meaning": "Vận động"
     },
     {
       "hanzi": "跑步",
@@ -69,7 +69,7 @@
     {
       "hanzi": "健身房",
       "pinyin": "jiàn shēn fáng",
-      "meaning": "Phòng tập gym"
+      "meaning": "Phòng tập thể dục"
     },
     {
       "hanzi": "公园",
@@ -79,7 +79,7 @@
     {
       "hanzi": "比较",
       "pinyin": "bǐ jiào",
-      "meaning": "So sánh hơn"
+      "meaning": "Hơn - so sánh"
     }
   ]
 }

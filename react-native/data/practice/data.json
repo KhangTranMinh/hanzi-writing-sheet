@@ -161,7 +161,7 @@
   },
   {
     "hanzi": "豆腐",
-    "pinyin": "dòu fǔ",
+    "pinyin": "dòu fu",
     "meaning": "Đậu phụ"
   },
   {
@@ -226,7 +226,7 @@
   },
   {
     "hanzi": "学生",
-    "pinyin": "xué shēng",
+    "pinyin": "xué sheng",
     "meaning": "Học sinh"
   },
   {
@@ -256,7 +256,7 @@
   },
   {
     "hanzi": "对不对",
-    "pinyin": "duì bú duì",
+    "pinyin": "duì bù duì",
     "meaning": "Đúng không?"
   },
   {
@@ -266,7 +266,7 @@
   },
   {
     "hanzi": "大学生",
-    "pinyin": "dà xué shēng",
+    "pinyin": "dà xué sheng",
     "meaning": "Sinh viên đại học"
   },
   {
@@ -341,17 +341,17 @@
   },
   {
     "hanzi": "英国",
-    "pinyin": "yīng guó",
+    "pinyin": "Yīng guó",
     "meaning": "Anh Quốc"
   },
   {
     "hanzi": "加拿大",
-    "pinyin": "jiā ná dà",
+    "pinyin": "Jiā ná dà",
     "meaning": "Canada"
   },
   {
     "hanzi": "吗？",
-    "pinyin": "ma ？",
+    "pinyin": "ma?",
     "meaning": "phải không?"
   },
   {
@@ -476,7 +476,7 @@
   },
   {
     "hanzi": "谢谢",
-    "pinyin": "xiè xiè",
+    "pinyin": "xiè xie",
     "meaning": "Cảm ơn"
   },
   {
@@ -527,7 +527,7 @@
   {
     "hanzi": "第",
     "pinyin": "dì",
-    "meaning": "Thứ"
+    "meaning": "Thứ (chỉ thứ tự)"
   },
   {
     "hanzi": "第一",
@@ -571,12 +571,12 @@
   },
   {
     "hanzi": "一个新老师",
-    "pinyin": "yí gè xīn lǎo shī",
+    "pinyin": "yī gè xīn lǎo shī",
     "meaning": "Một giáo viên mới"
   },
   {
     "hanzi": "我叫陈明康",
-    "pinyin": "wǒ jiào chén míng kāng",
+    "pinyin": "wǒ jiào Chén Míng kāng",
     "meaning": "Tôi tên là Trần Minh Khang"
   },
   {
@@ -596,7 +596,7 @@
   },
   {
     "hanzi": "真的吗？",
-    "pinyin": "zhēn de ma ？",
+    "pinyin": "zhēn de ma?",
     "meaning": "Thật vậy không?"
   },
   {
@@ -721,7 +721,7 @@
   },
   {
     "hanzi": "只",
-    "pinyin": "zhī",
+    "pinyin": "zhǐ",
     "meaning": "Chỉ"
   },
   {
@@ -751,7 +751,7 @@
   },
   {
     "hanzi": "舒服",
-    "pinyin": "shū fú",
+    "pinyin": "shū fu",
     "meaning": "Thoải mái"
   },
   {
@@ -766,7 +766,7 @@
   },
   {
     "hanzi": "漂亮",
-    "pinyin": "piào liàng",
+    "pinyin": "piào liang",
     "meaning": "Đẹp"
   },
   {
