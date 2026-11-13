@@ -122,3 +122,30 @@ textarea:focus { border-color: #80916e; box-shadow: 0 0 0 3px rgba(128, 145, 110
 .lesson-section-title small { margin-top: 6px; color: #77746b; font-size: 13px; }
 .lesson-section-list { display: grid; gap: 8px; padding: 0 12px 12px; }
 .lesson-section-list .home-option { padding: 15px 18px; border-radius: 10px; box-shadow: none; }
+
+.translation-cards { display: grid; gap: 14px; }
+.translation-card { min-width: 0; padding: 24px; border: 1px solid #e5e1d8; border-radius: 16px; background: #fffefa; box-shadow: 0 18px 50px rgba(55, 49, 35, .07); }
+.translation-card label { display: grid; gap: 8px; margin-bottom: 16px; line-height: 1.5; }
+.translation-number { color: #66775a; font-size: 12px; font-weight: 750; text-transform: uppercase; letter-spacing: .08em; }
+textarea.translation-input { display: block; min-height: 52px; padding: 12px 14px; font-family: inherit; font-size: 16px; line-height: 1.6; }
+.translation-check { margin-top: 12px; padding: 10px 16px; border: 0; border-radius: 9px; background: #536b47; color: white; cursor: pointer; font: inherit; font-size: 14px; font-weight: 700; }
+.translation-check:hover { background: #43583a; }
+.translation-check:focus-visible { outline: 3px solid #9aaf8d; outline-offset: 3px; }
+.translation-answer { display: grid; gap: 5px; margin-top: 18px; padding: 15px; border-radius: 9px; background: #f5f8f2; overflow-wrap: anywhere; }
+.translation-answer[hidden] { display: none; }
+.translation-answer span { color: #66775a; font-size: 12px; font-weight: 700; }
+.translation-answer strong { font-size: 21px; }
+.translation-answer p { margin: 0; color: #536b47; line-height: 1.5; }
+@media (max-width: 540px) { .translation-card { padding: 18px; } }
+
+textarea.translation-input.is-correct { border-color: #6a9b68; background: #edf8eb; }
+textarea.translation-input.is-incorrect { border-color: #c97670; background: #fff0ee; }
+textarea.translation-input.is-shaking { animation: translation-shake .35s ease-in-out; }
+.translation-feedback { margin: 10px 0 0; color: #6e6b62; font-size: 13px; }
+.translation-feedback:empty { display: none; }
+@keyframes translation-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+@media (prefers-reduced-motion: reduce) { textarea.translation-input.is-shaking { animation: none; } }

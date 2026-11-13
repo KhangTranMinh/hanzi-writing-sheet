@@ -56,3 +56,7 @@ python3 scripts/shared_data/publish_shared_data.py
 ```
 
 The catalog `lessons/index.json` is generated outside `data/` because the static site cannot list files in a directory. `0000-0000.json` is a template and is excluded from the catalog. `0001-0001.json` is an example lesson that you can edit or replace. The interface lists parts and their lessons in descending numerical order. Serve the site over HTTP to load the catalog and lessons.
+
+## Translation exercises
+
+Add timestamped JSON files to `shared/data/translation-exercises/`. The shared data sync generates `translation-exercises/index.json` so the static site can list the exercises. Each file contains an `exercises` array with `question`, `hanzi`, and `pinyin` strings.

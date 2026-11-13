@@ -46,6 +46,12 @@ replace_data(MOBILE / 'data')
 # Generate the web lesson catalog (JSON does not support comments).
 (WEB / 'lessons' / 'index.json').write_text(json.dumps(lesson_ids, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 
+# Generate the web translation exercise catalog for static hosting.
+exercise_dir = SOURCE / 'translation-exercises'
+exercise_ids = sorted((path.stem for path in exercise_dir.glob('*.json')
+                       if re.fullmatch(r'\d{4}-\d{2}-\d{2}_\d{2}-\d{2}-\d{2}(?:-\d+)?', path.stem)), reverse=True)
+(WEB / 'translation-exercises' / 'index.json').write_text(json.dumps(exercise_ids, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+
 # Generate React Native's bundled worksheet data imports.
 characters = sorted(path.stem for path in (SOURCE / 'worksheet').glob('*.json'))
 lines = [
