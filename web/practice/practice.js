@@ -58,10 +58,22 @@
     retry.hidden = true;
     status.textContent = "Đang chuẩn bị thẻ…";
     try {
-      const response = await fetch("../data/practice/data.json", { cache: "no-cache" });
-      if (!response.ok) throw new Error("Không tải được danh sách luyện tập.");
-      const data = await response.json();
-      if (!Array.isArray(data) || !data.length) throw new Error("Danh sách luyện tập đang trống hoặc không hợp lệ.");
+      const catalogResponse = await fetch("../lessons/index.json", { cache: "no-cache" });
+      if (!catalogResponse.ok) throw new Error("Không tải được danh sách bài học.");
+      const catalog = await catalogResponse.json();
+      if (!Array.isArray(catalog) || catalog.some(id => typeof id !== "string" || !/^\d{4}-\d{4}$/.test(id))) {
+        throw new Error("Danh sách bài học không hợp lệ.");
+      }
+      const ids = [...new Set(catalog)].filter(id => id !== "0000-0000").sort();
+      const lessons = await Promise.all(ids.map(async id => {
+        const response = await fetch(`../data/lessons/${id}.json`, { cache: "no-cache" });
+        if (!response.ok) throw new Error(`Không tải được bài học ${id}.`);
+        const lesson = await response.json();
+        if (!lesson || !Array.isArray(lesson.items)) throw new Error(`Bài học ${id} không hợp lệ.`);
+        return lesson.items;
+      }));
+      const data = lessons.flat();
+      if (!data.length) throw new Error("Danh sách luyện tập đang trống.");
       const prepared = data.map((item, i) => {
         if (!item || typeof item !== "object" || typeof item.hanzi !== "string" || !item.hanzi.trim()) {
           throw new Error(`Mục ${i + 1} cần có chữ Hán.`);
@@ -81,7 +93,12 @@
         }
         return { ...item, hanzi: text, pinyin: reading, meaning: item.meaning?.trim() || "" };
       });
-      items = shuffle(prepared);
+      const seen = new Set();
+      items = shuffle(prepared.filter(item => {
+        if (seen.has(item.hanzi)) return false;
+        seen.add(item.hanzi);
+        return true;
+      }));
       index = 0;
       showCard();
     } catch (error) {

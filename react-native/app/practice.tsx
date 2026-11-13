@@ -3,11 +3,17 @@ import { pinyin } from 'pinyin-pro';
 import { useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Text } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import practiceData from '../data/practice/data.json';
+import { lessons } from '../lib/lessons-data';
 
 type Card = { hanzi: string; pinyin?: string; meaning?: string };
 function shuffled(): Card[] {
-  const result: Card[] = practiceData.map(item => ({ ...item, pinyin: item.pinyin?.trim() || pinyin(item.hanzi) }));
+  const seen = new Set<string>();
+  const result: Card[] = Object.keys(lessons).sort().flatMap(id => lessons[id].items).filter(item => {
+    const hanzi = item.hanzi.trim();
+    if (seen.has(hanzi)) return false;
+    seen.add(hanzi);
+    return true;
+  }).map(item => ({ ...item, hanzi: item.hanzi.trim(), pinyin: item.pinyin?.trim() || pinyin(item.hanzi) }));
   for (let i = result.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [result[i], result[j]] = [result[j], result[i]]; }
   return result;
 }

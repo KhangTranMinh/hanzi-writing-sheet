@@ -18,16 +18,7 @@ The worksheet reads cached stroke data from `data/worksheet/` first and fetches 
 
 ## Practice cards
 
-Edit `shared/data/practice/data.json` at the project root to change the cards. It is a JSON array of objects with a required non-empty `hanzi` string and optional `pinyin` and `meaning` strings:
-
-```json
-[
-  { "hanzi": "你好" },
-  { "hanzi": "中国", "pinyin": "zhōng guó", "meaning": "Trung Quốc" }
-]
-```
-
-Missing or blank pinyin is generated locally with `pinyin-pro` for the whole word. Supply pinyin explicitly when a particular reading is needed. After the cards are prepared, they are shuffled. Select a card to reveal its pinyin and any non-empty meaning, then select it again to move on. At the end, select **Luyện lại** to start a new shuffled round. Serve the folder over HTTP as shown above so the browser can load the JSON file.
+Practice cards are collected from `shared/data/lessons/`, excluding the `0000-0000.json` template. Entries with the same Hanzi are deduplicated before shuffling; the first entry in lesson order supplies the pinyin and meaning. Select a card to reveal its pinyin and meaning, then select it again to move on. Select **Luyện lại** to start a new shuffled round. Serve the folder over HTTP so the browser can load the lessons.
 
 ### Changing how cards advance
 
@@ -43,23 +34,6 @@ const ADVANCE_MODE = "manual";
 To change the automatic delay, edit `AUTO_ADVANCE_DELAY` in the same file; its value is in milliseconds (`1500` means 1.5 seconds). Reload the page after editing.
 
 When updating the version, also change the `v` query values on the lesson and practice links and stylesheet in `index.html`, the stylesheet and script references in `lessons/index.html` and `practice/index.html`, and the script reference in `worksheet/index.html`, to match. This gives browsers new URLs for updated files. The practice data is revalidated when it is loaded.
-
-### Updating practice data
-
-Run the local script from the project root on macOS to fill missing pinyin and English meanings. It preserves existing values and updates its input file in place:
-
-- **Default:** update `shared/data/practice/data.json`.
-  `python3 scripts/update_practice_data/run.py`
-- **`--file`:** update a different JSON file.
-  `python3 scripts/update_practice_data/run.py --file private/practice.json`
-- **`--all`:** regenerate pinyin and English meanings, including existing values. If a word is not found in the dictionary, its existing meaning is kept and the word is reported.
-  `python3 scripts/update_practice_data/run.py --all`
-- **`--refresh`:** download a fresh CC-CEDICT dictionary before updating meanings.
-  `python3 scripts/update_practice_data/run.py --refresh`
-
-Pinyin uses the bundled `pinyin-pro` and macOS JavaScriptCore. English meanings use exact dictionary matches; unmatched entries are listed and left unchanged. Review suggestions because dictionary entries can have multiple meanings and do not account for context. The repository includes CC-CEDICT in `scripts/update_practice_data/`, so the script can run offline. Use `--refresh` to download an updated copy.
-
-Dictionary data is from [CC-CEDICT](https://cc-cedict.org/), published by MDBG and its contributors, under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). The script downloads a copy from [cc-cedict-stardict](https://github.com/liamsaliba/cc-cedict-stardict). Meanings added from the dictionary retain that attribution and license.
 
 ## Lessons
 
