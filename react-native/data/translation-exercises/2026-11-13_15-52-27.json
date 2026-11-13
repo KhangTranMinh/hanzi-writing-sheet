@@ -1,0 +1,55 @@
+{
+  "created_at": "13/11/2026 15:52:27 (Asia/Ho_Chi_Minh)",
+  "exercises": [
+    {
+      "question": "Phòng khách của tôi rất rộng.",
+      "hanzi": "我的客厅很大。",
+      "pinyin": "wǒ de kè tīng hěn dà."
+    },
+    {
+      "question": "Ghế sofa rất thoải mái.",
+      "hanzi": "沙发很舒服。",
+      "pinyin": "shā fā hěn shū fu."
+    },
+    {
+      "question": "Nhà bếp của cô ấy rất đẹp.",
+      "hanzi": "她的厨房很漂亮。",
+      "pinyin": "tā de chú fáng hěn piào liang."
+    },
+    {
+      "question": "Căn phòng của anh ấy rất bừa bộn.",
+      "hanzi": "他的房间很乱。",
+      "pinyin": "tā de fáng jiān hěn luàn."
+    },
+    {
+      "question": "Tủ lạnh rất cũ.",
+      "hanzi": "冰箱很旧。",
+      "pinyin": "bīng xiāng hěn jiù."
+    },
+    {
+      "question": "Mùa đông ở Bắc Kinh rất lạnh.",
+      "hanzi": "北京冬天很冷。",
+      "pinyin": "běi jīng dōng tiān hěn lěng."
+    },
+    {
+      "question": "Vạn Lý Trường Thành rất nổi tiếng.",
+      "hanzi": "长城很有名。",
+      "pinyin": "cháng chéng hěn yǒu míng."
+    },
+    {
+      "question": "Tôi thích vịt quay.",
+      "hanzi": "我喜欢烤鸭。",
+      "pinyin": "wǒ xǐ huān kǎo yā."
+    },
+    {
+      "question": "Lẩu rất cay.",
+      "hanzi": "火锅很辣。",
+      "pinyin": "huǒ guō hěn là."
+    },
+    {
+      "question": "Vé vào cửa sở thú rất đắt.",
+      "hanzi": "动物园的门票很贵。",
+      "pinyin": "dòng wù yuán de mén piào hěn guì."
+    }
+  ]
+}
