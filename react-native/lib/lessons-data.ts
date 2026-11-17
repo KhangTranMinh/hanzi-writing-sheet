@@ -18,4 +18,5 @@ export const lessons: Record<string, Lesson> = {
   "0002-0001": require("../data/lessons/0002-0001.json"),
   "0002-0002": require("../data/lessons/0002-0002.json"),
   "0002-0003": require("../data/lessons/0002-0003.json"),
+  "0002-0004": require("../data/lessons/0002-0004.json"),
 };
