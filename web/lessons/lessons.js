@@ -94,7 +94,7 @@ async function show() {
         button.type = 'button';
         button.className = 'lesson-speak';
         button.setAttribute('aria-label', `Nghe phát âm ${card.hanzi}`);
-        button.textContent = '🔊';
+        button.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg>';
         button.addEventListener('click', () => speak(card.hanzi));
         article.append(button);
         grid.append(article);

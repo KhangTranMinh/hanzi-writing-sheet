@@ -6,6 +6,8 @@
   const AUTO_ADVANCE_DELAY = 1500;
   const status = document.querySelector("#practice-status");
   const card = document.querySelector("#practice-card");
+  const cardWrap = document.querySelector("#card-wrap");
+  const speech = document.querySelector("#card-speech");
   const hanzi = document.querySelector("#card-hanzi");
   const pinyin = document.querySelector("#card-pinyin");
   const meaning = document.querySelector("#card-meaning");
@@ -34,6 +36,7 @@
     card.setAttribute("aria-label", "Chạm để xem pinyin và nghĩa");
     if (index >= items.length) {
       card.hidden = true;
+      cardWrap.hidden = true;
       hint.hidden = true;
       status.textContent = `Đã hoàn thành ${items.length} thẻ!`;
       retry.textContent = "Luyện lại";
@@ -46,6 +49,8 @@
     meaning.hidden = !items[index].meaning;
     status.textContent = `Thẻ ${index + 1} / ${items.length}`;
     card.hidden = false;
+    cardWrap.hidden = false;
+    speech.hidden = !("speechSynthesis" in window && "SpeechSynthesisUtterance" in window);
     hint.hidden = false;
     retry.hidden = true;
   }
@@ -54,6 +59,7 @@
     clearTimeout(timer);
     card.classList.remove("card-exit", "card-enter");
     card.hidden = true;
+    cardWrap.hidden = true;
     hint.hidden = true;
     retry.hidden = true;
     status.textContent = "Đang chuẩn bị thẻ…";
@@ -141,6 +147,13 @@
     } else if (event.animationName === "card-enter") {
       card.classList.remove("card-enter");
     }
+  });
+  speech.addEventListener("click", () => {
+    if (!items[index] || card.classList.contains("card-exit")) return;
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance(items[index].hanzi);
+    utterance.lang = "zh-CN";
+    window.speechSynthesis.speak(utterance);
   });
   retry.addEventListener("click", start);
   start();

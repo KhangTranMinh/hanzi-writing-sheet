@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f6f4ef">
   <title>Ôn bài chữ Hán</title>
-  <link rel="stylesheet" href="../assets/styles.css?v=26.11.18.05">
+  <link rel="stylesheet" href="../assets/styles.css?v=26.11.18.07">
   <script src="../assets/vendor/pinyin-pro/pinyin-pro.min.js" defer></script>
-  <script src="practice.js?v=26.11.18.05" defer></script>
+  <script src="practice.js?v=26.11.18.07" defer></script>
 </head>
 <body>
   <main class="app-shell practice-shell">
@@ -19,6 +19,7 @@
     </header>
     <section class="practice-area" aria-label="Thẻ luyện tập">
       <p id="practice-status" class="practice-status" role="status" aria-live="polite">Đang chuẩn bị thẻ…</p>
+      <div id="card-wrap" class="card-wrap" hidden>
       <button id="practice-card" class="practice-card" type="button" hidden aria-label="Chạm để xem pinyin và nghĩa">
         <span class="card-inner">
           <span class="card-hanzi" id="card-hanzi"></span>
@@ -26,6 +27,10 @@
           <span class="card-meaning" id="card-meaning" aria-hidden="true" hidden></span>
         </span>
       </button>
+      <button id="card-speech" class="card-speech" type="button" aria-label="Nghe phát âm chữ Hán" hidden>
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"/><path d="M16 9a4 4 0 0 1 0 6M19 6a8 8 0 0 1 0 12"/></svg>
+      </button>
+      </div>
       <p id="practice-hint" class="practice-hint" hidden>Chạm vào thẻ để xem pinyin và nghĩa</p>
       <button id="practice-retry" class="generate-button" type="button" hidden>Thử lại</button>
     </section>
