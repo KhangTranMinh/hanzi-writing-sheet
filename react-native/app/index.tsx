@@ -10,7 +10,7 @@ export default function HomeScreen() {
     {([
       ['/worksheet', '✎', 'Tạo trang luyện viết', 'Tạo trang tập viết chữ Hán hoặc trang ô trống để in.'],
       ['/lessons', '学', 'Bài học', 'Chọn bài học và xem chữ Hán, pinyin cùng nghĩa.'],
-      ['/practice', '字', 'Luyện tập', 'Ôn chữ Hán và pinyin với các thẻ ghi nhớ.'],
+      ['/practice', '字', 'Ôn bài', 'Ôn chữ Hán và pinyin với các thẻ ghi nhớ.'],
     ] as const).map(([path, icon, title, detail]) => <Pressable key={path} accessibilityRole="button" onPress={() => router.push(path)} style={styles.option}>
       <View style={styles.icon}><Text style={styles.iconText}>{icon}</Text></View>
       <View style={styles.copy}><Text style={styles.optionTitle}>{title}</Text><Text style={styles.detail}>{detail}</Text></View>

@@ -12,7 +12,7 @@ From the project root, serve only this folder:
 python3 scripts/web/run_web_local.py
 ```
 
-Open <http://localhost:8000/> and choose **Tạo trang luyện viết**, **Bài học**, or **Luyện tập**. A worksheet opens in a new tab; choose **In / lưu PDF** and then **Save as PDF** in the browser print dialog.
+Open <http://localhost:8000/> and choose **Tạo trang luyện viết**, **Bài học**, or **Ôn bài**. A worksheet opens in a new tab; choose **In / lưu PDF** and then **Save as PDF** in the browser print dialog.
 
 The worksheet reads cached stroke data from `data/worksheet/` first and fetches missing characters from Hanzi Writer Data. The bundled `pinyin-pro` library provides pinyin locally.
 
