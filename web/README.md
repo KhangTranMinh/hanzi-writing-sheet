@@ -4,7 +4,7 @@ This static browser app uses the generated `data/` copy of `shared/data/`. It do
 
 Hosted version: <https://khangtranminh.github.io/hanzi-writing-sheet/>. GitHub Actions deploys `web/` whenever a commit is pushed to `main`.
 
-The home page reads the version from `version.json` in the format `YY.MM.DD.xx`. Before every commit, update it using the date in Vietnam: increment `xx` on the same day, or start at `01` on a new day. This is a manual step; commits and deployments do not change it automatically. See the repository's `AGENTS.md` for the full commit rule.
+The home page reads the version from `version.json` in the format `YY.MM.DD.xx`. Before every commit, run `python3 scripts/web/version.py --bump`. This updates the version using the date in Vietnam and synchronizes versioned URLs across all web HTML pages. Include those changes in the commit. See the repository's `AGENTS.md` for the full commit rule.
 
 From the project root, serve only this folder:
 
@@ -33,7 +33,7 @@ const ADVANCE_MODE = "manual";
 
 To change the automatic delay, edit `AUTO_ADVANCE_DELAY` in the same file; its value is in milliseconds (`1500` means 1.5 seconds). Reload the page after editing.
 
-When updating the version, also change the `v` query values on the lesson and practice links and stylesheet in `index.html`, the stylesheet and script references in `lessons/index.html` and `practice/index.html`, and the script reference in `worksheet/index.html`, to match. This gives browsers new URLs for updated files. The practice data is revalidated when it is loaded.
+To synchronize URLs with the current version without incrementing it, run `python3 scripts/web/version.py`. Run `python3 scripts/web/version.py --check` to detect mismatches; the deployment workflow also runs this check. Versioned URLs give browsers new URLs for updated files. The practice data is revalidated when it is loaded.
 
 ## Lessons
 

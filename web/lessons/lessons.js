@@ -8,6 +8,31 @@ const part = params.get('part');
 const lesson = params.get('lesson');
 const idPattern = /^\d{4}$/;
 
+function speak(word) {
+  if (!('speechSynthesis' in window) || !('SpeechSynthesisUtterance' in window)) {
+    status.textContent = 'Trình duyệt này không hỗ trợ phát âm.';
+    return;
+  }
+  const voices = speechSynthesis.getVoices();
+  const voice = voices.find(item => /^zh[-_]CN$/i.test(item.lang)) || voices.find(item => /^zh[-_]/i.test(item.lang));
+  if (voices.length && !voice) {
+    status.textContent = 'Không tìm thấy giọng tiếng Trung. Hãy cài giọng tiếng Trung trong cài đặt thiết bị.';
+    return;
+  }
+  status.textContent = '';
+  const utterance = new SpeechSynthesisUtterance(word);
+  utterance.lang = 'zh-CN';
+  if (voice) utterance.voice = voice;
+  utterance.rate = 0.9;
+  utterance.onerror = event => {
+    if (event.error !== 'interrupted' && event.error !== 'canceled') {
+      status.textContent = 'Không thể phát âm. Vui lòng kiểm tra giọng tiếng Trung trên thiết bị.';
+    }
+  };
+  speechSynthesis.cancel();
+  speechSynthesis.speak(utterance);
+}
+
 function link(label, href, detail) {
   const a = document.createElement('a');
   a.className = 'home-option';
@@ -65,6 +90,13 @@ async function show() {
           item.textContent = value;
           article.append(item);
         }
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'lesson-speak';
+        button.setAttribute('aria-label', `Nghe phát âm ${card.hanzi}`);
+        button.textContent = '🔊';
+        button.addEventListener('click', () => speak(card.hanzi));
+        article.append(button);
         grid.append(article);
       });
       content.append(grid);
