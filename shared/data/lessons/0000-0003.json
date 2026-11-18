@@ -40,6 +40,41 @@
       "hanzi": "明天见",
       "pinyin": "míng tiān jiàn",
       "meaning": "Ngày mai gặp"
+    },
+    {
+      "hanzi": "什么",
+      "pinyin": "shén me ？",
+      "meaning": "Gì vậy?"
+    },
+    {
+      "hanzi": "为什么",
+      "pinyin": "wèi shén me ？",
+      "meaning": "Tại sao?"
+    },
+    {
+      "hanzi": "什么时候",
+      "pinyin": "shén me shí hòu ？",
+      "meaning": "Khi nào?"
+    },
+    {
+      "hanzi": "谁",
+      "pinyin": "shéi ？",
+      "meaning": "Ai vậy?"
+    },
+    {
+      "hanzi": "谁做饭？",
+      "pinyin": "shéi zuò fàn ？",
+      "meaning": "Ai nấu ăn?"
+    },
+    {
+      "hanzi": "你是谁？",
+      "pinyin": "nǐ shì shuí ？",
+      "meaning": "Bạn là ai?"
+    },
+    {
+      "hanzi": "没关系",
+      "pinyin": "méi guān xì",
+      "meaning": "Không sao"
     }
   ]
 }
