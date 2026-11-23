@@ -7,9 +7,9 @@
       "meaning": "Câu lạc bộ"
     },
     {
-      "hanzi": "喜酒",
-      "pinyin": "xǐ jiǔ",
-      "meaning": "Rượu mừng"
+      "hanzi": "喜剧",
+      "pinyin": "xǐ jù",
+      "meaning": "Hài kịch"
     },
     {
       "hanzi": "有趣",
@@ -70,6 +70,51 @@
       "hanzi": "唱歌",
       "pinyin": "chàng gē",
       "meaning": "Hát"
+    },
+    {
+      "hanzi": "西班牙语",
+      "pinyin": "xī bān yá yǔ",
+      "meaning": "Tiếng Tây Ban Nha"
+    },
+    {
+      "hanzi": "法语",
+      "pinyin": "fǎ yǔ",
+      "meaning": "Tiếng Pháp"
+    },
+    {
+      "hanzi": "练习",
+      "pinyin": "liàn xí",
+      "meaning": "Luyện tập"
+    },
+    {
+      "hanzi": "一种语言",
+      "pinyin": "yī zhǒng yǔ yán",
+      "meaning": "Một loại ngôn ngữ"
+    },
+    {
+      "hanzi": "面包",
+      "pinyin": "miàn bāo",
+      "meaning": "Bánh mì"
+    },
+    {
+      "hanzi": "饼干",
+      "pinyin": "bǐng gān",
+      "meaning": "Bánh quy"
+    },
+    {
+      "hanzi": "面条",
+      "pinyin": "mian tiao",
+      "meaning": "Mì sợi"
+    },
+    {
+      "hanzi": "泰国",
+      "pinyin": "tài guó",
+      "meaning": "Thái Lan"
+    },
+    {
+      "hanzi": "烤",
+      "pinyin": "kǎo",
+      "meaning": "Nướng"
     }
   ]
 }

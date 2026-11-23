@@ -1,0 +1,155 @@
+{
+  "created_at": "23/11/2026 09:28:40 (Asia/Ho_Chi_Minh)",
+  "exercises": [
+    {
+      "question": "Tôi thích chơi bóng đá.",
+      "hanzi": "我喜欢踢足球。",
+      "pinyin": "wǒ xǐ huān tī zú qiú."
+    },
+    {
+      "question": "Bạn biết chơi bóng đá không?",
+      "hanzi": "你会踢足球吗？",
+      "pinyin": "nǐ huì tī zú qiú ma?"
+    },
+    {
+      "question": "Cuối tuần tôi và bạn học cùng chơi bóng đá.",
+      "hanzi": "周末我和同学一起踢足球。",
+      "pinyin": "zhōu mò wǒ hé tóng xué yì qǐ tī zú qiú."
+    },
+    {
+      "question": "Con trai tôi thích bóng chày.",
+      "hanzi": "我的儿子喜欢棒球。",
+      "pinyin": "wǒ de ér zi xǐ huān bàng qiú."
+    },
+    {
+      "question": "Câu lạc bộ bóng đá rất nổi tiếng.",
+      "hanzi": "足球俱乐部很有名。",
+      "pinyin": "zú qiú jù lè bù hěn yǒu míng."
+    },
+    {
+      "question": "Bạn thích bóng đá hay bóng chày?",
+      "hanzi": "你喜欢足球还是棒球？",
+      "pinyin": "nǐ xǐ huān zú qiú hái shì bàng qiú?"
+    },
+    {
+      "question": "Tôi biết chơi piano.",
+      "hanzi": "我会弹钢琴。",
+      "pinyin": "wǒ huì tán gāng qín."
+    },
+    {
+      "question": "Con gái cô ấy thường luyện tập piano.",
+      "hanzi": "她的女儿常常练习弹钢琴。",
+      "pinyin": "tā de nǚ ér cháng cháng liàn xí tán gāng qín."
+    },
+    {
+      "question": "Anh ấy biết chơi guitar và cũng biết hát.",
+      "hanzi": "他会弹吉他，也会唱歌。",
+      "pinyin": "tā huì tán jí tā, yě huì chàng gē."
+    },
+    {
+      "question": "Chúng ta cùng hát nhé!",
+      "hanzi": "你和我一起唱歌吧！",
+      "pinyin": "nǐ hé wǒ yì qǐ chàng gē ba!"
+    },
+    {
+      "question": "Mẹ tôi rất thích nhạc pop.",
+      "hanzi": "我妈妈非常喜欢流行音乐。",
+      "pinyin": "wǒ mā ma fēi cháng xǐ huān liú xíng yīn yuè."
+    },
+    {
+      "question": "Cây đàn guitar của bạn rất đẹp.",
+      "hanzi": "你的吉他很漂亮。",
+      "pinyin": "nǐ de jí tā hěn piào liang."
+    },
+    {
+      "question": "Trong phòng khách có đàn piano.",
+      "hanzi": "客厅有钢琴。",
+      "pinyin": "kè tīng yǒu gāng qín."
+    },
+    {
+      "question": "Hôm nay bạn luyện tập guitar hay piano?",
+      "hanzi": "今天你练习弹吉他还是弹钢琴？",
+      "pinyin": "jīn tiān nǐ liàn xí tán jí tā hái shì tán gāng qín?"
+    },
+    {
+      "question": "Phim hài rất thú vị.",
+      "hanzi": "喜剧电影很有趣。",
+      "pinyin": "xǐ jù diàn yǐng hěn yǒu qù."
+    },
+    {
+      "question": "Cuối tuần tôi và mẹ cùng xem phim hài.",
+      "hanzi": "周末我和妈妈一起看喜剧电影。",
+      "pinyin": "zhōu mò wǒ hé mā ma yì qǐ kàn xǐ jù diàn yǐng."
+    },
+    {
+      "question": "Bạn học của tôi biết nói tiếng Pháp.",
+      "hanzi": "我的同学会说法语。",
+      "pinyin": "wǒ de tóng xué huì shuō fǎ yǔ."
+    },
+    {
+      "question": "Bạn biết nói tiếng Tây Ban Nha không?",
+      "hanzi": "你会说西班牙语吗？",
+      "pinyin": "nǐ huì shuō xī bān yá yǔ ma?"
+    },
+    {
+      "question": "Tôi thường luyện tập tiếng Pháp.",
+      "hanzi": "我常常练习法语。",
+      "pinyin": "wǒ cháng cháng liàn xí fǎ yǔ."
+    },
+    {
+      "question": "Cô ấy và tôi cùng luyện tập tiếng Tây Ban Nha.",
+      "hanzi": "她和我一起练习西班牙语。",
+      "pinyin": "tā hé wǒ yì qǐ liàn xí xī bān yá yǔ."
+    },
+    {
+      "question": "Tiếng Pháp là một ngôn ngữ.",
+      "hanzi": "法语是一种语言。",
+      "pinyin": "fǎ yǔ shì yì zhǒng yǔ yán."
+    },
+    {
+      "question": "Giáo viên tiếng Tây Ban Nha của tôi rất thú vị.",
+      "hanzi": "我的西班牙语老师很有趣。",
+      "pinyin": "wǒ de xī bān yá yǔ lǎo shī hěn yǒu qù."
+    },
+    {
+      "question": "Tôi muốn mua bánh mì và bánh quy.",
+      "hanzi": "我要买面包和饼干。",
+      "pinyin": "wǒ yào mǎi miàn bāo hé bǐng gān."
+    },
+    {
+      "question": "Ông nội thích ăn mì sợi.",
+      "hanzi": "爷爷喜欢吃面条。",
+      "pinyin": "yé ye xǐ huān chī miàn tiáo."
+    },
+    {
+      "question": "Bữa tối chúng ta cùng ăn mì nhé!",
+      "hanzi": "晚饭你和我一起吃面条吧！",
+      "pinyin": "wǎn fàn nǐ hé wǒ yì qǐ chī miàn tiáo ba!"
+    },
+    {
+      "question": "Bố đang nướng bánh mì.",
+      "hanzi": "爸爸现在烤面包。",
+      "pinyin": "bà ba xiàn zài kǎo miàn bāo."
+    },
+    {
+      "question": "Bánh quy rất ngon.",
+      "hanzi": "饼干很好吃。",
+      "pinyin": "bǐng gān hěn hǎo chī."
+    },
+    {
+      "question": "Tôi muốn đi Thái Lan.",
+      "hanzi": "我要去泰国。",
+      "pinyin": "wǒ yào qù Tài guó."
+    },
+    {
+      "question": "Bạn học người Thái Lan của tôi thích ca hát.",
+      "hanzi": "我的泰国同学喜欢唱歌。",
+      "pinyin": "wǒ de Tài guó tóng xué xǐ huān chàng gē."
+    },
+    {
+      "question": "Câu lạc bộ âm nhạc có mấy học sinh?",
+      "hanzi": "音乐俱乐部有几个学生？",
+      "pinyin": "yīn yuè jù lè bù yǒu jǐ ge xué sheng?"
+    }
+  ]
+}
